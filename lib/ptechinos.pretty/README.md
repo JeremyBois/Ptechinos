@@ -5,7 +5,7 @@
     - Capacitor reversible : C_0805_2012Metric
     - Battery switch reversible : SW_SPDT_JS202011AQN
     - choc switches + encoder reversible : pg1350-DR_rotary
-    - choc switches : pg1350-R
+    - choc switches reversible : pg1350-R
     - tenting puck : Tenting_Puck
 
   - [Buzzard](https://github.com/crehmann/Buzzard)
