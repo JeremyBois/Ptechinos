@@ -571,7 +571,7 @@ pcbs:
             - matrix_pinky_bottom
           shift: [0.75 kx, 0]
         params:
-          text: "Pteron36 0.1\\nby pampi"
+          text: "Ptechinos\\nby pampi"
           justify: left
       info_r:
         type: text
@@ -581,5 +581,5 @@ pcbs:
           shift: [0.75 kx, 0]
         params:
           layer: B.SilkS
-          text: "Pteron36 0.1\\nby pampi"
+          text: "Ptechinos\\nby pampi"
           justify: right mirror
