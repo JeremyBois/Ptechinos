@@ -1,7 +1,7 @@
 # Ptechinos
 
 ## Description
-A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc).
+A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc v1).
   - 2 optional encoders (EVQWGD001) or keys
   - 3 thumbs keys
   - 5x3 keys layout
@@ -9,6 +9,9 @@ A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc).
   - Small splay to adjust to natural hand shape
   - Choc switches with MX spacing
   - 157.1 x 112.6mm
+
+
+**Drawings made with love by [pandhara](https://www.artstation.com/pandhara).**
 
 
 ## Versions
@@ -26,8 +29,8 @@ A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc).
     - On/off switch
     - Capacitor
     - Battery support
-      - JST female to avoid solering battery
-      - pins also available if soldering is needed
+      - JST female to avoid to solder the battery
+      - pins also available if soldering is needed/wanted
   - Mounting
     - Add Mounting holes (draft)
     - Add plates (draft)
@@ -48,17 +51,31 @@ A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc).
 
 ### V0.4
 
-  - Add board name to the slikscreen
+  - Update Readme
+    - Add credits
+    - Add pictures
+    - Add notes for available mask colors
+  - Update silkscreen drawings with final version
+  - Consistent hole size in switch footprints
+  - Generate STL files for plate mounting
   - Make encoder (EVQWGD001) footprint reversible using SMD jumpers
     - Require to bridge jumpers on the same side as the encoder
 
 
+![Schema](preview/output/v0.4/schema.svg)
+![Top](preview/output/v0.4/blue/top.svg)
+![Bottom](preview/output/v0.4/blue/bottom.svg)
 
 
-## Misc
-**Colors (PCB viewer) :**
-  - body : #6D744B
-  - Copper : #B87332
-  - Solder mask : #0B0B0B
-  - Silkscreen : #F5F5F5
 
+## Notes
+
+PCB/Solder Mask Colors :
+  - yellow : `#F6A624`
+  - black : `#000000`
+  - white : `#ECECDF`
+  - green : `#008C4A`
+  - blue : `#4990E2`
+  - red : `#D0011B`
+
+![HackADay](https://hackaday.com/wp-content/uploads/2018/05/colorswatches.jpg?w=800)
