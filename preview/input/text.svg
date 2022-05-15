@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
-   sodipodi:docname="fonts.svg"
+   sodipodi:docname="text.svg"
    inkscape:export-filename="/home/pampi/Downloads/kevinEleven.png"
    inkscape:export-xdpi="150"
    inkscape:export-ydpi="150"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.5016908"
-     inkscape:cx="414.71951"
-     inkscape:cy="549.22854"
+     inkscape:zoom="0.67605332"
+     inkscape:cx="-19.229252"
+     inkscape:cy="494.04387"
      inkscape:window-width="1920"
      inkscape:window-height="986"
      inkscape:window-x="0"
      inkscape:window-y="31"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer10" />
+     inkscape:current-layer="layer8" />
   <defs
      id="defs2">
     <rect
@@ -180,8 +180,8 @@
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="Fonts"
-     sodipodi:insensitive="true"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <g
        inkscape:groupmode="layer"
        id="layer3"
@@ -199,9 +199,9 @@
          inkscape:export-ydpi="150"><tspan
            x="143.18644"
            y="404.91826"
-           id="tspan9189"><tspan
+           id="tspan2973"><tspan
              style="font-family:'kevin eleven';-inkscape-font-specification:'kevin eleven';text-align:center;text-anchor:middle"
-             id="tspan9187">Ptechinos</tspan></tspan></text>
+             id="tspan2971">Ptechinos</tspan></tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -217,9 +217,9 @@
          y="0"><tspan
            x="156.6019"
            y="422.06591"
-           id="tspan9193"><tspan
+           id="tspan2977"><tspan
              style="font-family:'Ka-Boing!';-inkscape-font-specification:'Ka-Boing!';text-align:center;text-anchor:middle"
-             id="tspan9191">Ptechinos</tspan></tspan></text>
+             id="tspan2975">Ptechinos</tspan></tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -235,9 +235,9 @@
          y="0"><tspan
            x="135.41602"
            y="406.40874"
-           id="tspan9197"><tspan
+           id="tspan2981"><tspan
              style="text-align:center;text-anchor:middle"
-             id="tspan9195">Ptechinos</tspan></tspan></text>
+             id="tspan2979">Ptechinos</tspan></tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -256,9 +256,9 @@
          inkscape:export-ydpi="150"><tspan
            x="144.47777"
            y="425.87603"
-           id="tspan9201"><tspan
+           id="tspan2985"><tspan
              style="font-family:meatloaf;-inkscape-font-specification:meatloaf;text-align:center;text-anchor:middle"
-             id="tspan9199">PTECHINOS</tspan></tspan></text>
+             id="tspan2983">PTECHINOS</tspan></tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -277,9 +277,9 @@
          inkscape:export-ydpi="150"><tspan
            x="106.91711"
            y="412.71226"
-           id="tspan9205"><tspan
+           id="tspan2989"><tspan
              style="font-family:'Sketch Match';-inkscape-font-specification:'Sketch Match';text-align:center;text-anchor:middle"
-             id="tspan9203">PETCHINOS</tspan></tspan></text>
+             id="tspan2987">PTECHINOS</tspan></tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -295,9 +295,9 @@
          y="0"><tspan
            x="144.2309"
            y="422.06591"
-           id="tspan9209"><tspan
+           id="tspan2993"><tspan
              style="font-family:'orange juice';-inkscape-font-specification:'orange juice';text-align:center;text-anchor:middle"
-             id="tspan9207">Ptechinos</tspan></tspan></text>
+             id="tspan2991">Ptechinos</tspan></tspan></text>
     </g>
     <g
        inkscape:label="All"
@@ -313,9 +313,9 @@
          y="0"><tspan
            x="158.85332"
            y="422.06591"
-           id="tspan9213"><tspan
+           id="tspan2997"><tspan
              style="font-family:'Just Mandrawn';-inkscape-font-specification:'Just Mandrawn';text-align:center;text-anchor:middle"
-             id="tspan9211">Ptechinos</tspan></tspan></text>
+             id="tspan2995">Ptechinos</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.27831278,0,0,0.27831278,-33.092948,68.855146)"
@@ -325,9 +325,9 @@
          y="0"><tspan
            x="190.10645"
            y="446.15872"
-           id="tspan9217"><tspan
+           id="tspan3001"><tspan
              style="font-family:'KA-BLAMO!';-inkscape-font-specification:'KA-BLAMO!';text-align:center;text-anchor:middle"
-             id="tspan9215">Ptechinos</tspan></tspan></text>
+             id="tspan2999">Ptechinos</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.27831278,0,0,0.27831278,-27.004677,133.15818)"
@@ -337,9 +337,9 @@
          y="0"><tspan
            x="148.43164"
            y="406.56671"
-           id="tspan9221"><tspan
+           id="tspan3005"><tspan
              style="font-family:'Comedy Sketch Demo';-inkscape-font-specification:'Comedy Sketch Demo';text-align:center;text-anchor:middle"
-             id="tspan9219">Ptechinos</tspan></tspan></text>
+             id="tspan3003">Ptechinos</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.27831278,0,0,0.27831278,70.404884,99.207272)"
@@ -349,9 +349,9 @@
          y="0"><tspan
            x="159.35191"
            y="431.24424"
-           id="tspan9225"><tspan
+           id="tspan3009"><tspan
              style="font-family:'meatloaf shadow outline';-inkscape-font-specification:'meatloaf shadow outline';text-align:center;text-anchor:middle"
-             id="tspan9223">Ptechinos</tspan></tspan></text>
+             id="tspan3007">Ptechinos</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.27831278,0,0,0.27831278,72.703676,157.45122)"
@@ -361,9 +361,9 @@
          y="0"><tspan
            x="160.80664"
            y="406.56671"
-           id="tspan9229"><tspan
+           id="tspan3013"><tspan
              style="font-family:'Sketch Book';-inkscape-font-specification:'Sketch Book, ';text-align:center;text-anchor:middle"
-             id="tspan9227">Ptechinos</tspan></tspan></text>
+             id="tspan3011">Ptechinos</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="scale(0.26458333)"
@@ -393,13 +393,13 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.9833px;line-height:1.25;font-family:'Yak Shamash';-inkscape-font-specification:'Yak Shamash';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1772-5-3);display:inline"
        x="171.51562"
        y="0"
-       inkscape:export-filename="/home/pampi/Downloads/sketch.png"
+       inkscape:export-filename="/home/pampi/Downloads/board_name.png"
        inkscape:export-xdpi="150"
        inkscape:export-ydpi="150"><tspan
          x="106.91711"
          y="412.71226"
-         id="tspan9233"><tspan
+         id="tspan3017"><tspan
            style="font-family:'Sketch Match';-inkscape-font-specification:'Sketch Match';text-align:center;text-anchor:middle"
-           id="tspan9231">PETCHINOS</tspan></tspan></text>
+           id="tspan3015">PTECHINOS</tspan></tspan></text>
   </g>
 </svg>
