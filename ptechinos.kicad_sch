@@ -6,8 +6,8 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-05-14")
-    (rev "0.4")
+    (date "2022-05-24")
+    (rev "0.5")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
 
@@ -2193,8 +2193,8 @@
     (property "Reference" "L4" (id 0) (at 245.11 133.35 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 246.38 148.59 0))
-    (property "Footprint" "" (id 2) (at 246.38 151.13 0)
+    (property "Value" "FrontName" (id 1) (at 246.38 148.59 0))
+    (property "Footprint" "ptechinos:board_name" (id 2) (at 246.38 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 246.38 151.13 0)
@@ -2307,8 +2307,8 @@
     (property "Reference" "L5" (id 0) (at 260.35 133.35 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 261.62 148.59 0))
-    (property "Footprint" "" (id 2) (at 261.62 151.13 0)
+    (property "Value" "BackName" (id 1) (at 261.62 148.59 0))
+    (property "Footprint" "ptechinos:board_name" (id 2) (at 261.62 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 261.62 151.13 0)
