@@ -8,7 +8,7 @@ A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc v1).
   - Outer columns for top pinky (reduce hand torsion)
   - Small splay to adjust to natural hand shape
   - Choc switches with MX spacing
-  - 157.1 x 112.6mm
+  - 157.2 x 116.3mm
 
 
 **Drawings made with love by [pandhara](https://www.artstation.com/pandhara).**
@@ -62,9 +62,26 @@ A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc v1).
     - Require to bridge jumpers on the same side as the encoder
 
 
-![Schema](preview/output/v0.4/schema.svg)
-![Top](preview/output/v0.4/blue/top.svg)
-![Bottom](preview/output/v0.4/blue/bottom.svg)
+### V0.5
+
+  - Update ergogen config
+    - automatic plates generation (2d/3d)
+    - remove pcb components (unused)
+    - add bottom magnets / camera mounts holes
+    - add preview drawing to make easier to visualize plates stack
+  - Update pcb board constraints with more aggressive minimums
+  - Update PCB according to new ergogen plate config
+  - PCB
+    - Improve silkscreens ajustements
+    - More aggresive thumb angle
+    - Lower thumbs keys
+    - Encoder angle is now the same as the thumb key below
+    - Update board dimensions
+
+
+![Schema](preview/output/v0.5/schema.svg)
+![Top](preview/output/v0.5/top.svg)
+![Bottom](preview/output/v0.5/bottom.svg)
 
 
 
