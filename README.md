@@ -1,7 +1,8 @@
 # Ptechinos
-
 ## Description
-A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc v1).
+**Ptechinos** is an ergonomic keyboard inspired by [Pteron36](https://github.com/harshitgoel96/pteron36-split-keyboard) and [Balbuzard](https://github.com/brow/balbuzard):
+
+  - 36 keys (kailh choc v1)
   - 5x3 keys layout + 3 thumb keys
   - 2 optional encoders (EVQWGD001) or keys
   - Outer columns for top pinky (reduce hand torsion)
@@ -9,6 +10,8 @@ A crossover between Pteron36 and Balbuzard with 36 keys (kailh choc v1).
 
 
 **Drawings made with love by [pandhara](https://www.artstation.com/pandhara).**
+
+* [QMK layout](https://github.com/JeremyBois/qmk-ptechinos)
 
 
 
@@ -27,6 +30,8 @@ All production files are in `data/production` :
 
 **No production files.**
 
+
+
 ## V0.2 - ⚰️
 
   - Add bluetooth components
@@ -40,6 +45,8 @@ All production files are in `data/production` :
     - Add plates (draft)
 
 **No production files.**
+
+
 
 ## V0.3 - ⚰️
 
@@ -56,6 +63,8 @@ All production files are in `data/production` :
 
 **Untested.**
 
+
+
 ## V0.4 - ⚰️
 
   - Update Readme
@@ -70,6 +79,8 @@ All production files are in `data/production` :
   - Bottom plate uses 10cm or 15cm magnet holes
 
 **Untested.**
+
+
 
 ## V0.5 - ✅
 
@@ -91,7 +102,6 @@ All production files are in `data/production` :
 **Wired version is fully tested** : see used [QMK layout](https://github.com/JeremyBois/qmk-ptechinos).
 
 
-
 Left           |  Right
 :-------------------------:|:-------------------------:
 ![Left](./data/production/v0.5/top.svg?sanitize=true)  |  ![Right](./data/production/v0.5/bottom.svg?sanitize=true)
@@ -108,9 +118,23 @@ Left           |  Right
 
 **Work in progress.**
 
+### Notes
+  - Choc spacing at least vertically
+    - 💚 easier vertical combos
+    - 💚 less finger extension
+
+  - Try [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
+    - R2  == row3 (schema) == bottom row
+    - R3  == row2 (schema) == home row
+    - R4  == row1 (schema) == top row
+    - Thumbs
+      - 1 x [R3X Convex 1U](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
+      - 2 x [T15 Thumb](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
+
 
 # PCB/Solder Mask Colors
-
 ![HackADay](https://hackaday.com/wp-content/uploads/2018/05/colorswatches.jpg?w=800)
 
 A detail description of available colors for PCB manufacturing by [Ben Vallack](https://www.youtube.com/watch?v=3PSUh6gRJk8).
+
+
