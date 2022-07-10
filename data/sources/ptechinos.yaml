@@ -1,28 +1,29 @@
 units:
-  kx: u # 19mm MX spacing
-  ky: u # 19mm MX spacing
+  kx: cx # 18mm Choc spacing
+  ky: cy # 17mm Choc spacing
+  spreadX: cx + 1
+  spreadY: cy + 1
   px: 2
   py: 2
 
   # visual_x/_y are built in units
   # keycaps size in demo.dxf
-  visual_x: 18
-  visual_y: 17
+  visual_x: cx
+  visual_y: cy
 points:
   zones:
     matrix:
-      key.padding: kx
+      key.padding: spreadY
       columns:
         pinky:
           origin: [ 0, -1ky ]
           stagger: 0 ky
-          spread: kx
           rotate: 8
           key:
             column_net: P20
           rows:
             top:
-              shift: [-kx, -ky]
+              shift: [-spreadX, -spreadY]
               bind: [0, px, 0, 0]
             home:
               shift: [0, 0]
@@ -33,7 +34,7 @@ points:
         ring:
           origin: [ 0, -1ky ]
           stagger: 0.6 ky
-          spread: 0.97kx
+          spread: kx
           rotate: -6
           key:
             column_net: P19
@@ -41,26 +42,26 @@ points:
         middle:
           origin: [ 0, -1ky ]
           stagger: 0.2 ky
-          spread: kx
+          spread: 0.98spreadX
           rotate: -2
           key:
             column_net: P18
-            bind: [0, px, py, px]
+            bind: [0.5py, px, py, px]
         index:
           origin: [ 0, -1ky ]
           stagger: -0.3 ky
-          spread: 0.97kx
+          spread: kx
           rotate: -4
           key:
             column_net: P15
-            bind: [0, 0, py, 3px]
+            bind: [1.5py, 0, py, 3px]
         inner:
           origin: [ 0, -1ky ]
           stagger: -0.1 ky
-          spread: kx
+          spread: spreadX
           key:
             column_net: P14
-            bind: [0, 0.5px, py, px]
+            bind: [py, 0.5px, py, px]
       rows:
         bottom:
           row_net: P6
@@ -71,7 +72,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-2.5kx, -1.3ky]
+        shift: [-2.65kx, -1.45ky]
       columns:
         near:
           spread: 2.2kx
@@ -80,13 +81,13 @@ points:
           key:
             column_net: P19
         home:
-          spread: 1kx
+          spread: 0.98spreadX
           rotate: -20
           origin: [-0.5 kx, -0.6 ky]
           key:
             column_net: P18
         far:
-          spread: 1kx
+          spread: 0.98spreadX
           rotate: -20
           origin: [-0.5 kx, -0.6 ky]
           key:
@@ -97,7 +98,7 @@ points:
     encoder:
       anchor:
         ref: thumbfan_home_thumb
-        shift: [-0.2kx, 1.18ky]
+        shift: [-0.1kx, 1.32ky]
       columns:
         far:
           key:
@@ -116,25 +117,25 @@ outlines:
       - type: polygon
         points:
           - ref: thumbfan_far_thumb
-            shift: [0.58 kx, 0.5 ky ]
+            shift: [0.6kx, 0.5 ky ]
           - ref: thumbfan_far_thumb
-            shift: [0.58 kx, -0.5 ky]
+            shift: [0.55kx, -0.5 ky]
           - ref: thumbfan_near_thumb
-            shift: [0.5 px, -0.52 ky]
+            shift: [0.5 px, -0.65 ky]
           - ref: matrix_pinky_bottom
-            shift: [-0.5kx, -0.5ky]
+            shift: [-0.5kx, -0.65ky]
           - ref: matrix_pinky_bottom
-            shift: [-1.5kx, 0.5ky]
+            shift: [-1.53kx, 0.4ky]
           - ref: matrix_pinky_top
-            shift: [-0.65kx, 0.45ky]
+            shift: [-0.7kx, 0.5ky]
           - ref: matrix_ring_top
-            shift: [-0.5kx, 0.5ky]
+            shift: [-0.6kx, 0.6ky]
           - ref: matrix_ring_top
-            shift: [kx, 0.5ky]
+            shift: [kx, 0.6ky]
           - ref: matrix_inner_home
-            shift: [0, -0.25ky]
+            shift: [0, -0.5ky]
           - ref: matrix_inner_home
-            shift: [1.75 kx, -ky]
+            shift: [1.75 kx, -1.2ky]
     _rounded_thumbfan_glue:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
@@ -144,13 +145,13 @@ outlines:
       - type: polygon
         points:
           - ref: matrix_inner_home
-            shift: [0, -0.25ky]
+            shift: [0.2kx, -0.5ky]
           - ref: matrix_inner_top
-            shift: [0, 0.5ky]
+            shift: [0.2kx, 0.612ky]
           - ref: matrix_inner_top
-            shift: [44, 0.5ky]
+            shift: [45, 0.65ky]
           - ref: matrix_inner_bottom
-            shift: [36, -20]
+            shift: [35, -25]
     _rounded_controller_area:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
@@ -187,7 +188,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [29.155, -39.51]
+            shift: [28.785, -38.98]
         radius: 1.1
       thumb:
         type: circle
@@ -200,7 +201,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_inner_top
-            shift: [0, 0]
+            shift: [0.3kx, 0]
         radius: 7.5
       center:
         type: circle
@@ -212,44 +213,15 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_inner_bottom
-            shift: [0, -1.3ky]
+            shift: [0.4kx, -1.25ky]
         radius: 7.5
-    _camera_holes:
-      top_left:
-        type: circle
-        anchor:
-          - ref: matrix_ring_home
-        radius: 2.5527
-      top_center:
+    _puck_holes:
+      center:
         type: circle
         anchor:
           - ref: matrix_middle_home
-        radius: 2.5527
-      top_right:
-        type: circle
-        anchor:
-          - ref: matrix_index_home
-        radius: 2.5527
-      center_left:
-        type: circle
-        anchor:
-          - ref: matrix_ring_bottom
-        radius: 2.5527
-      center_center:
-        type: circle
-        anchor:
-          - ref: matrix_middle_bottom
-        radius: 2.5527
-      center_right:
-        type: circle
-        anchor:
-          - ref: matrix_index_bottom
-        radius: 2.5527
-      bottom_left:
-        type: circle
-        anchor:
-          - ref: matrix_ring_bottom
-        radius: 2.5527
+            shift: [9.225, -12.1]
+        radius: 20.5
     _mounting_holes:
       $extends: outlines.exports._screw_holes
       top_left:
@@ -335,9 +307,9 @@ outlines:
         type: outline
         name: _screw_holes
         operation: subtract
-      camera_holes:
+      puck_holes:
         type: outline
-        name: _camera_holes
+        name: _puck_holes
         operation: subtract
       magnet_holes:
         type: outline
@@ -375,9 +347,9 @@ outlines:
         type: outline
         name: _pcb_holes
         operation: stack
-      camera_holes:
+      puck_holes:
         type: outline
-        name: _camera_holes
+        name: _puck_holes
         operation: stack
       magnet_holes:
         type: outline
