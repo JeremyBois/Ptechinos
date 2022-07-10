@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "ptechinos")(type "KiCad")(uri "${KIPRJMOD}/lib/ptechinos.pretty")(options "")(descr ""))
+  (lib (name "ptechinos-graphics")(type "KiCad")(uri "${KIPRJMOD}/lib/ptechinos-graphics.pretty")(options "")(descr ""))
 )
