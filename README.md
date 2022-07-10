@@ -112,9 +112,17 @@ Left           |  Right
 
 ## V0.6 - 🚧
 
-  - Improve routing
-  - Bottom plate uses 15cm magnet holes
-  - Choc v1 spacing
+  - Improve / clean routing
+  - Bottom plate
+    - Uses 15cm magnet holes
+    - Remove standard 1/4 holes
+    - Add a hole to fit splitkb tenting kit
+  - Choc v1 spacing (with 1mm between keys)
+  - Add Cirque trackpad support using I2C connection
+    - Resistors
+    - FPC connector
+  - Update TRRS place to be able to place all components
+
 
 **Work in progress.**
 
@@ -130,6 +138,32 @@ Left           |  Right
     - Thumbs
       - 1 x [R3X Convex 1U](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
       - 2 x [T15 Thumb](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
+
+  - [Avoid Trrs shorting](https://www.reddit.com/r/MechanicalKeyboards/comments/a641ls/split_keyboard_trrs_shorting_and_protection/)
+
+  - Add support for a GlidePoint Cirque circular trackpad (35mm) using I2C
+    - Models
+      - [Adhesive overlay](https://www.mouser.fr/ProductDetail/Cirque/TM035035-2024-001?qs=wd5RIQLrsJjQWLerbkGS5g%3D%3D)
+      - [Curved overlay](https://eu.mouser.com/ProductDetail/Cirque/TM035035-2024-003?qs=wd5RIQLrsJiMSFF94ofOQw%3D%3D)
+      - [Haptic response](https://eu.mouser.com/ProductDetail/Alps-Alpine/AFT14A903A?qs=CiayqK2gdcIKZolCNjqbxg%3D%3D)
+    - 4.7k pull up resistor required for I2C connection
+      - SDA <--> VCC
+      - SCL <--> VCC
+    - Connector adapter from
+    - Trackpad PCB must be adapted
+      - Remove **R1** (SPI --> I2C)
+      - Remove **R7** and **R8** (3.3V --> 5V VCC)
+    - Keeping serial to connect both halves
+    - Components on PCB
+      - [FPC Connectors 0.5MM 12 POS](https://eu.mouser.com/ProductDetail/Hirose-Connector/FH12-12S-0.5SH55?qs=Ux3WWAnHpjA1i1nP49r1%2FQ%3D%3D) (footprint already in Kicad)
+      - [4.7ohm resistor SMD CaseCode=2012mm](https://eu.mouser.com/c/passive-components/resistors/?case%20code%20-%20mm=2012&resistance=4.7%20Ohms&termination%20style=SMD%2FSMT&instock=y)
+    - References
+      - [qmk support](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_pointing_device.md)
+      - [build log corne](https://beekeeb.com/cirque-trackpad-i2c-on-corne-keyboard/)
+      - [Chunky V2](https://kbd.news/Chunky-V2-1219.html)
+      - [i2c wiring](https://docs.qmk.fm/#/feature_split_keyboard)
+      - buzzard (Correct trrs pins, resistors)
+
 
 
 # PCB/Solder Mask Colors
