@@ -21,65 +21,19 @@ All production files are in `data/production` :
   - `plates` : 2D/3D files to build the sandwich case
 
 
-## V0.1 - ⚰️
+## V0.6 - 🚧
 
-  - 36 keys + 2 optional encoder (EC11)
-  - Pro micro footprint
-  - TRRS / TRS jack to connect both halves
-  - Reset
-
-**No production files.**
-
-
-
-## V0.2 - ⚰️
-
-  - Add bluetooth components
-    - On/off switch
-    - Capacitor
-    - Battery support
-      - JST female to avoid to solder the battery
-      - pins also available if soldering is needed/wanted
-  - Mounting
-    - Add Mounting holes (draft)
-    - Add plates (draft)
-
-**No production files.**
+  - Improve / clean routing
+  - Bottom plate
+    - Uses 15cm magnet holes
+    - Remove standard 1/4 holes
+    - Add a hole to fit splitkb tenting kit on the bottom plate
+  - Choc v1 spacing (with 1mm between keys)
+  - Cirque trackpad support using I2C connection and FPC connector
+  - OLED support using I2C connection
 
 
-
-## V0.3 - ⚰️
-
-  - Replace vertical encoder (EC11) with horizontal one (EVQWGD001)
-  - Better tracing
-  - Add teardrops
-  - Mounting
-    - Correct mounting holes size
-    - Add MCU guard holes
-    - Complete plates (top / bottom)
-  - Add logo to silkcreen (draft)
-  - Find keyboard name
-  - Bottom plate uses 10cm magnet holes
-
-**Untested.**
-
-
-
-## V0.4 - ⚰️
-
-  - Update Readme
-    - Add credits
-    - Add pictures
-    - Add notes for available mask colors
-  - Update silkscreen drawings with final version
-  - Consistent hole size in switch footprints
-  - Generate STL files for plate mounting
-  - Make encoder (EVQWGD001) footprint reversible using SMD jumpers
-    - Require to bridge jumpers on the same side as the encoder
-  - Bottom plate uses 10cm or 15cm magnet holes
-
-**Untested.**
-
+**Work in progress.**
 
 
 ## V0.5 - ✅
@@ -110,21 +64,67 @@ Left           |  Right
 
 
 
-## V0.6 - 🚧
+## V0.4 - ⚰️
 
-  - Improve / clean routing
-  - Bottom plate
-    - Uses 15cm magnet holes
-    - Remove standard 1/4 holes
-    - Add a hole to fit splitkb tenting kit
-  - Choc v1 spacing (with 1mm between keys)
-  - Add Cirque trackpad support using I2C connection
-    - Resistors
-    - FPC connector
-  - Update TRRS place to be able to place all components
+  - Update Readme
+    - Add credits
+    - Add pictures
+    - Add notes for available mask colors
+  - Update silkscreen drawings with final version
+  - Consistent hole size in switch footprints
+  - Generate STL files for plate mounting
+  - Make encoder (EVQWGD001) footprint reversible using SMD jumpers
+    - Require to bridge jumpers on the same side as the encoder
+  - Bottom plate uses 10cm or 15cm magnet holes
+
+**Untested.**
 
 
-**Work in progress.**
+
+## V0.3 - ⚰️
+
+  - Replace vertical encoder (EC11) with horizontal one (EVQWGD001)
+  - Better tracing
+  - Add teardrops
+  - Mounting
+    - Correct mounting holes size
+    - Add MCU guard holes
+    - Complete plates (top / bottom)
+  - Add logo to silkcreen (draft)
+  - Find keyboard name
+  - Bottom plate uses 10cm magnet holes
+
+**Untested.**
+
+
+
+## V0.2 - ⚰️
+
+  - Add bluetooth components
+    - On/off switch
+    - Capacitor
+    - Battery support
+      - JST female to avoid to solder the battery
+      - pins also available if soldering is needed/wanted
+  - Mounting
+    - Add Mounting holes (draft)
+    - Add plates (draft)
+
+**No production files.**
+
+
+
+## V0.1 - ⚰️
+
+  - 36 keys + 2 optional encoder (EC11)
+  - Pro micro footprint
+  - TRRS / TRS jack to connect both halves
+  - Reset
+
+**No production files.**
+
+
+
 
 ### Notes
   - Choc spacing at least vertically
