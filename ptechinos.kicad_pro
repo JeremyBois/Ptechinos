@@ -380,6 +380,7 @@
         "name": " Power",
         "nets": [
           "VCC",
+          "VCC_ON",
           "bat+",
           "raw"
         ],
