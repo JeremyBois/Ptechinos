@@ -1,6 +1,7 @@
 (footprint "RollerEncoder_Panasonic_EVQWGD001" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 625DBD24)
+  (descr "EVQWGD001 horizontal encoder")
   (property "Sheetfile" "ptechinos.kicad_sch")
   (property "Sheetname" "")
   (attr through_hole)

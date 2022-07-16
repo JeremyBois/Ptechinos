@@ -1,6 +1,7 @@
-(footprint "Power_reversible" (version 20211014) (generator pcbnew)
+(footprint "Switch_2positions_reversible_SMD" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 60C21B72)
+  (descr "Two positions switch with horizontal / vertical slider")
   (property "Sheetfile" "mosquito.kicad_sch")
   (property "Sheetname" "")
   (fp_text reference "PSW1" (at 0 0.5 -180) (layer "F.SilkS") hide

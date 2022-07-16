@@ -1,6 +1,7 @@
 (footprint "pg1350-DR_rotary" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 61CA179C)
+  (descr "Reversible PG1350 and EC11 encoder")
   (attr through_hole)
   (fp_text reference "REF**" (at 0.05 -0.5) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))

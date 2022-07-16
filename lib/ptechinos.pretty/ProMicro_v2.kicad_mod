@@ -1,6 +1,7 @@
 (footprint "ProMicro_v2" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 5B7FE439)
+  (descr "ProMicro reversible")
   (property "Sheetfile" "Pteron36.kicad_sch")
   (property "Sheetname" "")
   (attr through_hole)

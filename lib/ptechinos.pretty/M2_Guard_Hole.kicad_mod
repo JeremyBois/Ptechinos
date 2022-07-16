@@ -1,6 +1,7 @@
 (footprint "M2_Guard_Hole" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 625ABAC4)
+  (descr "Generic through plate hole : 4mm exterior - 2.2mm interior (smaller than M2 spacer diameter)")
   (attr through_hole)
   (fp_text reference "TH2" (at 0 2.7) (layer "F.SilkS") hide
     (effects (font (size 1 1) (thickness 0.15)))

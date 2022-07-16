@@ -1,6 +1,7 @@
 (footprint "pg1350-R" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 61CA174D)
+  (descr "Reversible PG1350")
   (attr through_hole)
   (fp_text reference "K1" (at 0 7 180) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))

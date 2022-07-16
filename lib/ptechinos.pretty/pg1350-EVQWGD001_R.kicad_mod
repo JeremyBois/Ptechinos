@@ -1,7 +1,7 @@
 (footprint "pg1350-EVQWGD001_R" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 625DBD24)
-  (descr "Reversible PG1350 and EVQWGD001 encoder. ")
+  (descr "Reversible PG1350 and EVQWGD001 encoder")
   (property "Sheetfile" "ptechinos.kicad_sch")
   (property "Sheetname" "")
   (attr through_hole)
