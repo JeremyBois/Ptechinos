@@ -72,22 +72,22 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-2.65kx, -1.45ky]
+        shift: [-1.35kx, -1.6ky]
       columns:
         near:
-          spread: 2.2kx
-          origin: [-0.5 kx, -0.5 ky]
+          spread: spreadX
+          origin: [kx, ky]
           rotate: -5
           key:
             column_net: P19
         home:
-          spread: 0.98spreadX
+          spread: spreadX
           rotate: -20
           origin: [-0.5 kx, -0.6 ky]
           key:
             column_net: P18
         far:
-          spread: 0.98spreadX
+          spread: spreadX
           rotate: -20
           origin: [-0.5 kx, -0.6 ky]
           key:
@@ -98,7 +98,7 @@ points:
     encoder:
       anchor:
         ref: thumbfan_home_thumb
-        shift: [-0.1kx, 1.32ky]
+        shift: [-0.15kx, 1.285ky]
       columns:
         far:
           key:
@@ -117,9 +117,9 @@ outlines:
       - type: polygon
         points:
           - ref: thumbfan_far_thumb
-            shift: [0.6kx, 0.5 ky ]
+            shift: [0.62kx, 0.5 ky ]
           - ref: thumbfan_far_thumb
-            shift: [0.55kx, -0.5 ky]
+            shift: [0.62kx, -0.5 ky]
           - ref: thumbfan_near_thumb
             shift: [0.5 px, -0.65 ky]
           - ref: matrix_pinky_bottom
@@ -133,9 +133,9 @@ outlines:
           - ref: matrix_ring_top
             shift: [kx, 0.6ky]
           - ref: matrix_inner_home
-            shift: [0, -0.5ky]
+            shift: [0, -0.8ky]
           - ref: matrix_inner_home
-            shift: [1.75 kx, -1.2ky]
+            shift: [2kx, -1.7ky]
     _rounded_thumbfan_glue:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
@@ -145,13 +145,13 @@ outlines:
       - type: polygon
         points:
           - ref: matrix_inner_home
-            shift: [0.2kx, -0.5ky]
+            shift: [0.2kx, -1.5ky]
           - ref: matrix_inner_top
             shift: [0.2kx, 0.612ky]
           - ref: matrix_inner_top
-            shift: [45, 0.65ky]
+            shift: [47, 0.65ky]
           - ref: matrix_inner_bottom
-            shift: [35, -25]
+            shift: [36, -25]
     _rounded_controller_area:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
@@ -164,7 +164,20 @@ outlines:
           ref:
             - encoder_far_bottom
           shift: [-7.25, -11.1]
-        size: [14.5, 18.1]
+        size: [14.6, 18.1]
+    _encoder_exclude:
+      main:
+        type: rectangle
+        anchor:
+          ref:
+            - encoder_far_bottom
+          shift: [-9.8, -11.1]
+        size: [19.6, 24]
+    _rounded_encoder_exclude:
+      # Apply a fillet to the polygon specified above to round the corners
+      - type: outline
+        name: _encoder_exclude
+        fillet: 1px
     _screw_holes:
       top_left:
         type: circle
@@ -194,7 +207,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [73.765, -58.71]
+            shift: [68.415, -54.93]
         radius: 1.1
     _magnet_holes:
       top:
@@ -213,9 +226,9 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_inner_bottom
-            shift: [0.4kx, -1.25ky]
+            shift: [0.3kx, -1.25ky]
         radius: 7.5
-    _puck_holes:
+    _puck_hole:
       center:
         type: circle
         anchor:
@@ -239,13 +252,19 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [78.245, -0.46]
+            shift: [74.505, 15.31]
         radius: 1.1
-      guard_bottom:
+      guard_bottom_left:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [59.265, -21.25]
+            shift: [52.905, -23.7]
+        radius: 1.1
+      guard_bottom_right:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [70.785, -32]
         radius: 1.1
     _pcb_holes:
       mounting_holes:
@@ -276,17 +295,28 @@ outlines:
         type: outline
         name: _keywell
         fillet: 1
+    trackpad:
+      pad:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [70, -10]
+        radius: 17.5
     keycaps:
       main:
         type: outline
         name: _base
+      encoder_exclude:
+        type: outline
+        name: _rounded_encoder_exclude
+        operation: subtract
       caps:
         type: keys
         side: left
         size: [cx, cy]
         bound: false
         corner: 1
-        operation: subtract
+        operation: stack
     pcb:
       main:
         type: outline
@@ -307,9 +337,9 @@ outlines:
         type: outline
         name: _screw_holes
         operation: subtract
-      puck_holes:
+      puck_hole:
         type: outline
-        name: _puck_holes
+        name: _puck_hole
         operation: subtract
       magnet_holes:
         type: outline
@@ -327,15 +357,15 @@ outlines:
         type: outline
         name: _screw_holes
         operation: subtract
-      encoder:
+      encoder_exclude:
         type: outline
-        name: _encoder_cutout
+        name: _rounded_encoder_exclude
         operation: subtract
     preview:
       main:
         type: outline
         name: pcb
-      top_plate:
+      top:
         type: outline
         name: top_plate
         operation: subtract
@@ -347,13 +377,21 @@ outlines:
         type: outline
         name: _pcb_holes
         operation: stack
-      puck_holes:
+      puck_hole:
         type: outline
-        name: _puck_holes
+        name: _puck_hole
         operation: stack
       magnet_holes:
         type: outline
         name: _magnet_holes
+        operation: stack
+      encoder:
+        type: outline
+        name: _encoder_cutout
+        operation: stack
+      trackpad:
+        type: outline
+        name: trackpad
         operation: stack
 cases:
   top_plate:
