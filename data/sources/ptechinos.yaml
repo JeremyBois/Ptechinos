@@ -46,7 +46,7 @@ points:
           rotate: -2
           key:
             column_net: P18
-            bind: [0.5py, px, py, px]
+            bind: [py, px, py, px]
         index:
           origin: [ 0, -1ky ]
           stagger: -0.3 ky
@@ -54,14 +54,14 @@ points:
           rotate: -4
           key:
             column_net: P15
-            bind: [1.5py, 0, py, 3px]
+            bind: [2py, 0, py, 3px]
         inner:
           origin: [ 0, -1ky ]
           stagger: -0.1 ky
           spread: spreadX
           key:
             column_net: P14
-            bind: [py, 0.5px, py, px]
+            bind: [1.5py, 0.5px, py, px]
       rows:
         bottom:
           row_net: P6
@@ -147,9 +147,9 @@ outlines:
           - ref: matrix_inner_home
             shift: [0.2kx, -1.5ky]
           - ref: matrix_inner_top
-            shift: [0.2kx, 0.612ky]
+            shift: [0.2kx, 0.68ky]
           - ref: matrix_inner_top
-            shift: [47, 0.65ky]
+            shift: [47, 0.68ky]
           - ref: matrix_inner_bottom
             shift: [36, -25]
     _rounded_controller_area:
@@ -252,19 +252,19 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [74.505, 15.31]
+            shift: [75.845, 15.68]
         radius: 1.1
       guard_bottom_left:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [52.905, -23.7]
+            shift: [53.005, -25.36]
         radius: 1.1
       guard_bottom_right:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [70.785, -32]
+            shift: [70.515, -32.23]
         radius: 1.1
     _pcb_holes:
       mounting_holes:
