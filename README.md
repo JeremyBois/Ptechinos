@@ -23,15 +23,21 @@ All production files are in `data/production` :
 
 ## V0.6 - 🚧
 
-  - Improve / clean routing
+  - PCB
+    - Improve / clean routing
+    - Dimensions (hxl): 113.27x158.54mm
+    - Choc v1 spacing (with 1mm between keys)
+    - I2C components:
+      - Cirque trackpad with FFC/FPC connector
+      - OLED with socketing
+    - Update guard holes position and add another at the bottom (3 in total)
+
   - Bottom plate
     - Uses 15cm magnet holes
-    - Remove standard 1/4 holes
-    - Add a hole to fit splitkb tenting kit on the bottom plate
-  - Choc v1 spacing (with 1mm between keys)
-  - Cirque trackpad support using I2C connection and FPC connector
-  - OLED support using I2C connection
-  - Board dimensions (hxl): 113.27x158.54mm
+    - Replace standard 1/4 holes by splitkb tenting kit hole
+
+  - Top plate
+    - Encoder / Key (above thumbs cluster) excluded from plate
 
 
 Left           |  Right
@@ -135,10 +141,6 @@ Left           |  Right
 
 
 ### Notes
-  - Choc spacing at least vertically
-    - 💚 easier vertical combos
-    - 💚 less finger extension
-
   - Try [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
     - R2  == row3 (schema) == bottom row
     - R3  == row2 (schema) == home row
@@ -147,29 +149,24 @@ Left           |  Right
       - 1 x [R3X Convex 1U](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
       - 2 x [T15 Thumb](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
 
-  - [Avoid Trrs shorting](https://www.reddit.com/r/MechanicalKeyboards/comments/a641ls/split_keyboard_trrs_shorting_and_protection/)
-
-  - Add support for a GlidePoint Cirque circular trackpad (35mm) using I2C
-    - Models
-      - [Adhesive overlay](https://www.mouser.fr/ProductDetail/Cirque/TM035035-2024-001?qs=wd5RIQLrsJjQWLerbkGS5g%3D%3D)
-      - [Curved overlay](https://eu.mouser.com/ProductDetail/Cirque/TM035035-2024-003?qs=wd5RIQLrsJiMSFF94ofOQw%3D%3D)
-      - [Haptic response](https://eu.mouser.com/ProductDetail/Alps-Alpine/AFT14A903A?qs=CiayqK2gdcIKZolCNjqbxg%3D%3D)
-    - 4.7k pull up resistor required for I2C connection
-      - SDA <--> VCC
-      - SCL <--> VCC
-    - Connector adapter from
-    - Trackpad PCB must be adapted
+  - Add support for a GlidePoint Cirque circular trackpad using I2C
+    - [Secifications](https://www.dropbox.com/s/2l2cywvwxdfnoyw/GP-DS-170409%20TM035035%20SPI-I2C%20PINN%20Trackpad%20Spec.pdf?dl=0)
+    - [Schematic](https://www.dropbox.com/s/vk752nkoqo7jbqw/02-000611-00RevA01_TM035035-2024-000_SCH.pdf?dl=0)
+    - Trackpad PCB must be adapted to be used with Elite-C MCU
       - Remove **R1** (SPI --> I2C)
       - Remove **R7** and **R8** (3.3V --> 5V VCC)
-    - Keeping serial to connect both halves
-    - Components on PCB
-      - [FPC Connectors 0.5MM 12 POS](https://eu.mouser.com/ProductDetail/Hirose-Connector/FH12-12S-0.5SH55?qs=Ux3WWAnHpjA1i1nP49r1%2FQ%3D%3D) (footprint already in Kicad)
-      - [4.7ohm resistor SMD CaseCode=2012mm](https://eu.mouser.com/c/passive-components/resistors/?case%20code%20-%20mm=2012&resistance=4.7%20Ohms&termination%20style=SMD%2FSMT&instock=y)
+
+    - BOM
+      - 1x[35mm and Flat Overlay](https://www.mouser.fr/ProductDetail/Cirque/TM035035-2024-002?qs=sGAEpiMZZMu3sxpa5v1qrmePy6bg6o9mljGtaoJl40o%3D)
+      - 1x[FPC Connectors 0.5MM 12 POS](https://eu.mouser.com/ProductDetail/Hirose-Connector/FH12-12S-0.5SH55?qs=Ux3WWAnHpjA1i1nP49r1%2FQ%3D%3D) (footprint already in Kicad)
+      - 2x[4.7ohm resistor SMD CaseCode=2012mm](https://eu.mouser.com/c/passive-components/resistors/?case%20code%20-%20mm=2012&resistance=4.7%20Ohms&termination%20style=SMD%2FSMT&instock=y)
+      - 1x[FFC jumper cable](https://www.mouser.fr/ProductDetail/Wurth-Elektronik/687612100002?qs=PhR8RmCirEYcbulYEknwGg%3D%3D)
+
     - References
       - [qmk support](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_pointing_device.md)
+      - [i2c wiring](https://docs.qmk.fm/#/feature_split_keyboard)
       - [build log corne](https://beekeeb.com/cirque-trackpad-i2c-on-corne-keyboard/)
       - [Chunky V2](https://kbd.news/Chunky-V2-1219.html)
-      - [i2c wiring](https://docs.qmk.fm/#/feature_split_keyboard)
       - buzzard (Correct trrs pins, resistors)
 
 
@@ -177,6 +174,15 @@ Left           |  Right
 # PCB/Solder Mask Colors
 ![HackADay](https://hackaday.com/wp-content/uploads/2018/05/colorswatches.jpg?w=800)
 
-A detail description of available colors for PCB manufacturing by [Ben Vallack](https://www.youtube.com/watch?v=3PSUh6gRJk8).
+A detail description of available colors for PCB manufacturing by [Ben Vallack](https://www.youtube.com/watch?v=3PSUh6gRJk8). Following colors can be used to get a correct approximation (without the gloss effect):
+  - Yellow = `#A48733` (Solder mask = `#BD9522`)
+  - Blue = `#213754`
+  - Red = `#8D281D`
+  - White = `#A7B5C2`
+  - Black (matte) = `#353B3E`
+  - Black (gloss) = `#131718`
+  - Green (matte) = `#006F52`
+  - Green (gloss) = `#005A44`
+  - Copper Pad (gloss grey) = `#AFAF98`
 
 
