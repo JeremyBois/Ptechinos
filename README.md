@@ -31,6 +31,7 @@ All production files are in `data/production` :
   - Choc v1 spacing (with 1mm between keys)
   - Cirque trackpad support using I2C connection and FPC connector
   - OLED support using I2C connection
+  - Board dimensions (hxl): 113.27x158.54mm
 
 
 **Work in progress.**
