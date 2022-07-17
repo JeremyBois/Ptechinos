@@ -34,6 +34,13 @@ All production files are in `data/production` :
   - Board dimensions (hxl): 113.27x158.54mm
 
 
+Left           |  Right
+:-------------------------:|:-------------------------:
+![Left](./data/production/v0.6/top.svg?sanitize=true)  |  ![Right](./data/production/v0.6/bottom.svg?sanitize=true)
+
+![Electrical schema](./data/production/v0.6/schema.svg?sanitize=true)
+
+
 **Work in progress.**
 
 
