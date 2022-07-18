@@ -67,14 +67,14 @@ Left           |  Right
     - Update board dimensions
   - Bottom plate uses 15cm magnet holes
 
-**Wired version is fully tested** : see used [QMK layout](https://github.com/JeremyBois/qmk-ptechinos).
-
 
 Left           |  Right
 :-------------------------:|:-------------------------:
 ![Left](./data/production/v0.5/top.svg?sanitize=true)  |  ![Right](./data/production/v0.5/bottom.svg?sanitize=true)
 
 ![Electrical schema](./data/production/v0.5/schema.svg?sanitize=true)
+
+**Wired version is fully tested** : see used [QMK layout](https://github.com/JeremyBois/qmk-ptechinos).
 
 
 
@@ -140,7 +140,8 @@ Left           |  Right
 
 
 
-### Notes
+# Notes
+
   - Try [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
     - R2  == row3 (schema) == bottom row
     - R3  == row2 (schema) == home row
@@ -171,11 +172,11 @@ Left           |  Right
 
 
 
-# PCB/Solder Mask Colors
+## PCB/Solder Mask Colors
 ![HackADay](https://hackaday.com/wp-content/uploads/2018/05/colorswatches.jpg?w=800)
 
 A detail description of available colors for PCB manufacturing by [Ben Vallack](https://www.youtube.com/watch?v=3PSUh6gRJk8). Following colors can be used to get a correct approximation (without the gloss effect):
-  - Yellow = `#A48733` (Solder mask = `#BD9522`)
+  - Yellow = `#A48733`
   - Blue = `#213754`
   - Red = `#8D281D`
   - White = `#A7B5C2`
