@@ -176,7 +176,7 @@ Left           |  Right
 ![HackADay](https://hackaday.com/wp-content/uploads/2018/05/colorswatches.jpg?w=800)
 
 A detail description of available colors for PCB manufacturing by [Ben Vallack](https://www.youtube.com/watch?v=3PSUh6gRJk8). Following colors can be used to get a correct approximation (without the gloss effect):
-  - Yellow = `#A48733`
+  - Yellow = `#D5B619`
   - Blue = `#213754`
   - Red = `#8D281D`
   - White = `#A7B5C2`
