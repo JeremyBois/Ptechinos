@@ -147,9 +147,9 @@ outlines:
           - ref: matrix_inner_home
             shift: [0.2kx, -1.5ky]
           - ref: matrix_inner_top
-            shift: [0.2kx, 0.68ky]
+            shift: [0.1kx, 0.677ky]
           - ref: matrix_inner_top
-            shift: [47, 0.68ky]
+            shift: [47, 0.677ky]
           - ref: matrix_inner_bottom
             shift: [36, -25]
     _rounded_controller_area:
