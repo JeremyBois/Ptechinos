@@ -26,3 +26,4 @@
   - [Ptechinos](https://github.com/JeremyBois/Ptechinos)
     - Horizontal encoder + choc switches reversible: pg1350-EVQWGD001_R
     - Horizontal encoder jumpers: EVQWGD001_jumpers
+    - FPC connector reversible: Hirose_FH12-12S-0.5SH_1x12-1MP_P0.50mm_Horizontal_R
