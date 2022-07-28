@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-07-17")
+    (date "2022-07-28")
     (rev "0.6")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
@@ -2777,7 +2777,7 @@
     (property "Value" "Trackpad FPC" (id 1) (at 101.6 132.0799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "ptechinos:Hirose_FH12-12S-0.5SH_1x12-1MP_P0.50mm_Horizontal_R" (id 2) (at 100.33 129.54 0)
+    (property "Footprint" "ptechinos:GCT_FFC2B35-12-G_R" (id 2) (at 100.33 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 100.33 129.54 0)
@@ -4250,7 +4250,7 @@
       (reference "J4") (unit 1) (value "AudioJack4") (footprint "ptechinos:MJ-4PP-9")
     )
     (path "/17efe087-3c06-4228-b0b9-f81dc95b2c2f"
-      (reference "J5") (unit 1) (value "Trackpad FPC") (footprint "ptechinos:Hirose_FH12-12S-0.5SH_1x12-1MP_P0.50mm_Horizontal_R")
+      (reference "J5") (unit 1) (value "Trackpad FPC") (footprint "ptechinos:GCT_FFC2B35-12-G_R")
     )
     (path "/bcc3f068-dd7c-4997-80d9-41bb8616ad34"
       (reference "J6") (unit 1) (value "OLED") (footprint "ptechinos:OLED")
