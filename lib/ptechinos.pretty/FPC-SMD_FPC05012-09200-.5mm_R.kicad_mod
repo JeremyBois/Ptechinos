@@ -2,6 +2,7 @@
   (layer "F.Cu")
   (tedit 61D55FDD)
   (descr "Reversible generic FPC connector with 0.5mm padding")
+  (tags "FPC")
   (property "LCSC" "C479750")
   (property "Sheetfile" "mx_track.kicad_sch")
   (property "Sheetname" "")
