@@ -40,11 +40,12 @@ All production files are in `data/production` :
     - Improve / clean routing
     - Dimensions (hxl): 113.27x158.54mm
     - Choc v1 spacing (with 1mm between keys)
-    - I2C components:
+    - Add support for I2C components:
       - Cirque trackpad with FFC/FPC connector
-      - OLED with socketing
+      - OLED with socketing / QWIIC (Require KP2040)
     - Update guard holes position and add another at the bottom (3 in total)
     - MCU board is aligned to middle column instead of inner column
+    - Change right/left thumbs orientation (+-90°) to be compatible with [Asymplex ChicagoSteno T15 Thumb](https://www.asymplex.xyz/product/cs-ergo-sets)
     - Change board connection for encoders to free analog pins (only four available on RP2040 MCU board)
       - From F5/F4 to D4/C6 pins
 
@@ -69,6 +70,8 @@ Left           |  Right
 ![Left](./data/production/v0.6/top.svg?sanitize=true)  |  ![Right](./data/production/v0.6/bottom.svg?sanitize=true)
 
 ![Electrical schema](./data/production/v0.6/schema.svg?sanitize=true)
+
+![Orientation](./data/production/v0.6/orientation.svg?sanitize=true)
 
 
 ### Bill of materials (BOM)
@@ -163,6 +166,8 @@ Left           |  Right
 ![Left](./data/production/v0.5/top.svg?sanitize=true)  |  ![Right](./data/production/v0.5/bottom.svg?sanitize=true)
 
 ![Electrical schema](./data/production/v0.5/schema.svg?sanitize=true)
+
+![Orientation](./data/production/v0.5/orientation.svg?sanitize=true)
 
 **Wired version is fully tested** : see used [QMK layout](https://github.com/JeremyBois/qmk-ptechinos).
 
@@ -259,13 +264,14 @@ Left           |  Right
      - [SSD1306 Monochrome 0.96" 128x64 - pins](https://splitkb.com/products/oled-display?variant=31226608549965)
      - [SSD1327 Grayscale 1.5" 128x128 - QWIIC (RP2040 required and no QMK support)](https://www.adafruit.com/product/4741)
 
-  - [ ] Try [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
+  - [x] Try [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
     - R2  == row3 (schema) == bottom row
     - R3  == row2 (schema) == home row
     - R4  == row1 (schema) == top row
     - Thumbs
       - 1 x [R3X Convex 1U](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
       - 2 x [T15 Thumb](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
+      - [x] Check stem required orientation for outer and inner thumbs (see with asymplex)
 
   - [ ] Try **QWIIC** as a hotswapable I2C with integrated pull-up resistors
     - [Joystick](https://www.sparkfun.com/products/15168)
@@ -276,6 +282,7 @@ Left           |  Right
   - [ ] Try Female Threaded 1/4" Standoffs in Unibody case instead of Splikb tenting puck
     - [Female Threaded Hex Standoffs ](https://www.mcmaster.com/standoffs/thread-size~1-4-20/length~1-4/)
 
+  - [ ] Try [Choc to MX converter](https://www.thingiverse.com/thing:4504072) with custom artisan
 
 
 
