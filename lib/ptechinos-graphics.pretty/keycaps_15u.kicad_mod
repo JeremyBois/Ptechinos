@@ -1,0 +1,36 @@
+(footprint "keycaps_15u" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 595cf368-d82d-4359-9c9d-24f41b45cc9e)
+  )
+  (fp_text value "keycaps_15u" (at 0 1 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 20fe87c4-3898-45c4-bdb3-6b23073d9c48)
+  )
+  (fp_line (start -13.5 -8.5) (end -13.5 8.5) (layer "Dwgs.User") (width 0.1) (tstamp 4377c03f-10ff-4d81-81a1-7d1e77a0dcc9))
+  (fp_line (start 13.5 -8.5) (end -13.5 -8.5) (layer "Dwgs.User") (width 0.1) (tstamp 779c8171-51be-4187-a149-4e71fef0c427))
+  (fp_line (start 13.5 8.5) (end 13.5 -8.5) (layer "Dwgs.User") (width 0.1) (tstamp 790d3f64-0faf-4c21-aa0b-035975075ea3))
+  (fp_line (start -13.5 8.5) (end 13.5 8.5) (layer "Dwgs.User") (width 0.1) (tstamp f60aeff8-ca17-463f-9cf9-5e814495f05b))
+  (fp_line (start -8.5 -9) (end -8.5 9) (layer "F.Fab") (width 0.1) (tstamp 17934e96-e098-4515-ab13-e450fd5e65be))
+  (fp_line (start 8.5 9) (end 8.5 -9) (layer "F.Fab") (width 0.1) (tstamp 3258526b-aba9-4798-9be4-2597cc12ea22))
+  (fp_line (start -8.5 9) (end 8.5 9) (layer "F.Fab") (width 0.1) (tstamp 411b8d4a-b8bf-4246-8ada-ff28e1cc0a1e))
+  (fp_line (start 8.5 -9) (end -8.5 -9) (layer "F.Fab") (width 0.1) (tstamp c4fa82d6-81e5-4a86-bc56-7aedb9bb135d))
+  (group "" (id 7653de54-fd2c-46e5-be7d-cb4397bf1514)
+    (members
+      17934e96-e098-4515-ab13-e450fd5e65be
+      3258526b-aba9-4798-9be4-2597cc12ea22
+      411b8d4a-b8bf-4246-8ada-ff28e1cc0a1e
+      c4fa82d6-81e5-4a86-bc56-7aedb9bb135d
+    )
+  )
+  (group "" (id e3697411-686e-4c3a-ac07-137a7f2cff4f)
+    (members
+      4377c03f-10ff-4d81-81a1-7d1e77a0dcc9
+      779c8171-51be-4187-a149-4e71fef0c427
+      790d3f64-0faf-4c21-aa0b-035975075ea3
+      f60aeff8-ca17-463f-9cf9-5e814495f05b
+    )
+  )
+)

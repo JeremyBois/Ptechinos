@@ -72,7 +72,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-1.35kx, -1.6ky]
+        shift: [-1.4kx, -1.6ky]
       columns:
         near:
           spread: spreadX
@@ -82,14 +82,14 @@ points:
             column_net: P19
         home:
           spread: spreadX
-          rotate: -20
-          origin: [-0.5 kx, -0.6 ky]
+          rotate: -15
+          origin: [-0.5 kx, -0.9ky]
           key:
             column_net: P18
         far:
           spread: spreadX
-          rotate: -20
-          origin: [-0.5 kx, -0.6 ky]
+          rotate: -15
+          origin: [-0.5 kx, -0.9ky]
           key:
             column_net: P15
       rows:
@@ -98,7 +98,7 @@ points:
     encoder:
       anchor:
         ref: thumbfan_home_thumb
-        shift: [-0.15kx, 1.285ky]
+        shift: [0kx, 1.26ky]
       columns:
         far:
           key:
@@ -147,16 +147,22 @@ outlines:
           - ref: matrix_inner_home
             shift: [0.2kx, -1.5ky]
           - ref: matrix_inner_top
-            shift: [0.1kx, 0.677ky]
+            shift: [0.55kx, 0.64ky]
           - ref: matrix_inner_top
-            shift: [47, 0.677ky]
+            shift: [0.56kx, 0.62ky]
+          - ref: matrix_inner_top
+            shift: [0.57kx, 0.61ky]
+          - ref: matrix_inner_top
+            shift: [0.6kx, 0.605ky]
+          - ref: matrix_inner_top
+            shift: [47, 0.753ky]
           - ref: matrix_inner_bottom
-            shift: [36, -25]
+            shift: [36.5, -25]
     _rounded_controller_area:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
         name: _controller_area
-        fillet: 2px
+        fillet: 1px
     _encoder_cutout:
       main:
         type: rectangle
@@ -207,7 +213,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [68.415, -54.93]
+            shift: [68.5, -51.69]
         radius: 1.1
     _magnet_holes:
       top:
@@ -252,7 +258,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [75.845, 15.68]
+            shift: [74.565, 16.82]
         radius: 1.1
       guard_bottom_left:
         type: circle
@@ -264,7 +270,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [70.525, -32.01]
+            shift: [70.83, -31.34]
         radius: 1.1
     _pcb_holes:
       mounting_holes:
@@ -302,29 +308,6 @@ outlines:
           - ref: matrix_middle_home
             shift: [70, -10]
         radius: 17.5
-    keycaps:
-      main:
-        type: outline
-        name: _base
-      encoder_exclude:
-        type: outline
-        name: _rounded_encoder_exclude
-        operation: subtract
-      caps:
-        type: keys
-        side: left
-        size: [cx, cy]
-        bound: false
-        corner: 1
-        operation: stack
-    pcb:
-      main:
-        type: outline
-        name: _base
-      controller:
-        type: outline
-        name: _rounded_controller_area
-        operation: add
     bottom_plate:
       main:
         type: outline
@@ -361,6 +344,29 @@ outlines:
         type: outline
         name: _rounded_encoder_exclude
         operation: subtract
+    pcb:
+      main:
+        type: outline
+        name: _base
+      controller:
+        type: outline
+        name: _rounded_controller_area
+        operation: add
+    keycaps:
+      main:
+        type: outline
+        name: _base
+      encoder_exclude:
+        type: outline
+        name: _rounded_encoder_exclude
+        operation: subtract
+      caps:
+        type: keys
+        side: left
+        size: [cx, cy]
+        bound: false
+        corner: 1
+        operation: stack
     preview:
       main:
         type: outline
@@ -394,13 +400,13 @@ outlines:
         name: trackpad
         operation: stack
 cases:
-  top_plate:
-    - name: top_plate
-      extrude: 1.2
-      rotate: [0, 0, 0]
-      shift: [0, 0, 0]
   bottom_plate:
     - name: bottom_plate
       extrude: 3
+      rotate: [0, 0, 0]
+      shift: [0, 0, 0]
+  top_plate:
+    - name: top_plate
+      extrude: 1.2
       rotate: [0, 0, 0]
       shift: [0, 0, 0]
