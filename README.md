@@ -39,14 +39,17 @@ All production files are in `data/production` :
   - **PCB**
     - Improve / clean routing
     - Dimensions (hxl): 113.27x158.54mm
-    - Choc v1 spacing (with 1mm between keys)
+    - Choc v1 spacing (with 1mm between keys added)
     - Add support for I2C components:
       - Cirque trackpad with FFC/FPC connector
       - OLED with socketing / QWIIC (Require KP2040)
     - Update guard holes position and add another at the bottom (3 in total)
-    - MCU board is aligned to middle column instead of inner column
-    - Change right/left thumbs orientation (+-90°) to be compatible with [Asymplex ChicagoSteno T15 Thumb](https://www.asymplex.xyz/product/cs-ergo-sets)
-    - Change board connection for encoders to free analog pins (only four available on RP2040 MCU board)
+    - MCU and TRRS are now aligned to PCB top edge and each protrude slightly
+    - Add support for [Asymplex ChicagoSteno T15 Thumb](https://www.asymplex.xyz/product/cs-ergo-sets)
+      - Change right/left thumbs orientation (+-90°)
+      - Increase spacing between thumbs (+5mm)
+      - Reduce rotation between thumbs (-5°)
+    - Change board connection for encoders to free KB2040 only 4 analog pins
       - From F5/F4 to D4/C6 pins
 
   - **Sandwich case**
@@ -283,6 +286,8 @@ Left           |  Right
     - [Female Threaded Hex Standoffs ](https://www.mcmaster.com/standoffs/thread-size~1-4-20/length~1-4/)
 
   - [ ] Try [Choc to MX converter](https://www.thingiverse.com/thing:4504072) with custom artisan
+
+  - [ ] Handle software difference between RP2040 and Atemega32U4 on QMK side
 
 
 
