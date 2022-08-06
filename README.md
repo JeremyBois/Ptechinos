@@ -38,7 +38,7 @@ All production files are in `data/production` :
 
   - **PCB**
     - Improve / clean routing
-    - Dimensions (hxl): 113.27x158.54mm
+    - Dimensions (hxl): 110x159mm
     - Choc v1 spacing (with 1mm between keys added)
     - Add support for I2C components:
       - Cirque trackpad with FFC/FPC connector
