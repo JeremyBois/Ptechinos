@@ -51,6 +51,7 @@ All production files are in `data/production` :
       - Reduce rotation between thumbs (-5°)
     - Change board connection for encoders to free KB2040 only 4 analog pins
       - From F5/F4 to D4/C6 pins
+    - Make more space for encoder / optional key for MX keycaps (using [this adapter](https://www.thingiverse.com/thing:4504072))
 
   - **Sandwich case**
     - Bottom plate

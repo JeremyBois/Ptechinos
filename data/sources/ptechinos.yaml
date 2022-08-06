@@ -98,7 +98,7 @@ points:
     encoder:
       anchor:
         ref: thumbfan_home_thumb
-        shift: [0kx, 1.26ky]
+        shift: [0kx, 1.22ky]
       columns:
         far:
           key:
@@ -177,7 +177,7 @@ outlines:
         anchor:
           ref:
             - encoder_far_bottom
-          shift: [-9.8, -11.1]
+          shift: [-9.8, -10]
         size: [19.6, 24]
     _rounded_encoder_exclude:
       # Apply a fillet to the polygon specified above to round the corners
