@@ -306,7 +306,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [70, -10]
+            shift: [70, -0.4ky]
         radius: 17.5
     bottom_plate:
       main:
