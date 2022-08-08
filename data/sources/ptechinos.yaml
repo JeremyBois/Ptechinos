@@ -182,10 +182,21 @@ outlines:
             - encoder_far_bottom
           shift: [-9.8, -10]
         size: [19.6, 24]
+    _encoder_to_thumbs:
+      main:
+        type: rectangle
+        anchor:
+          ref:
+            - encoder_far_bottom
+          shift: [0, 0.6]
+        size: [20, 10]
     _rounded_encoder_exclude:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
         name: _encoder_exclude
+        fillet: 1px
+      - type: outline
+        name: _encoder_to_thumbs
         fillet: 1px
     _screw_holes:
       top_left:
