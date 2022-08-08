@@ -27,9 +27,12 @@ points:
               bind: [0, px, 0, 0]
             home:
               shift: [0, 0]
-              bind: [2py+ky, 3px, py, px]
+              bind: [3py+ky, 3px, py, 2px]
             bottom:
               shift: [0, 0]
+              bind: [0, px, 0, 0]
+            bottom_bis:
+              shift: [0, -ky]
               bind: [0, px, 0, 0]
         ring:
           origin: [ 0, -1ky ]
@@ -76,20 +79,20 @@ points:
       columns:
         near:
           spread: spreadX
-          origin: [kx, ky]
+          origin: [2.1kx, ky]
           rotate: -5
           key:
             column_net: P19
         home:
           spread: spreadX
           rotate: -15
-          origin: [-0.5 kx, -0.9ky]
+          origin: [-kx, -0.9ky]
           key:
             column_net: P18
         far:
           spread: spreadX
           rotate: -15
-          origin: [-0.5 kx, -0.9ky]
+          origin: [-0.8 kx, -0.9ky]
           key:
             column_net: P15
       rows:
@@ -98,7 +101,7 @@ points:
     encoder:
       anchor:
         ref: thumbfan_home_thumb
-        shift: [0kx, 1.22ky]
+        shift: [0, 1.34ky]
       columns:
         far:
           key:
