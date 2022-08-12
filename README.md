@@ -309,3 +309,32 @@ Following colors can be used to get a correct approximation (without the gloss e
   - Copper Pad (gloss grey) = `#AFAF98`
 
 
+
+
+## I2C and pull-up
+
+  - [Good explanation of I2C pull-up resistors](https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/)
+    - The I2C bus specification defines a maximum of *0.4V* for the low-level output voltage
+    - Multiple devices can be on the same line if pull-up resistors are big enough
+
+$$
+\begin{aligned}
+& R_{VCC} = \frac{VCC - 0.4}{3mA} \\\\
+& R_{5} = \frac{5 - 0.4}{3} = 1.53kΩ \\\\
+& R_{3.3} = \frac{3.3 - 0.4}{3} = 967Ω
+\end{aligned}
+$$
+
+  - By connecting each device in parallel we decreased by the same amount the total resistance
+
+  - Ptechinos use 4.7kΩ resistors for the second I2C line (SDA1 / SCL1)
+    - 4.7kΩ resistors on 3.3V VCC allows up to $4$ devices ($\frac{1}{\frac{4}{4.7}} = 1.175kΩ$)
+
+  - [SSD1306 Monochrome 1.3" 128x64 - QWIIC](https://www.adafruit.com/product/938)
+    - Include with [2K resistors](https://cdn-shop.adafruit.com/datasheets/UG-2864HSWEG01+user+guide.pdf)
+    - Address is software controled allowing multiple screen to be connected on the same bus/line
+    - At most 2 screens (($\frac{1}{\frac{2}{2.2}} = 1.1kΩ$)) with a KB2040 board
+
+  - [Sparkfun joystick](https://www.sparkfun.com/products/15168) with QWIIC interface
+    - Op-out I2C pullup (2.2kΩ)[](https://cdn.sparkfun.com/assets/7/4/a/6/8/Qwiic_Joystick.pdf)
+    - At most 2 joystick (($\frac{1}{\frac{2}{2.2}} = 1.1kΩ$)) with a KB2040 board
