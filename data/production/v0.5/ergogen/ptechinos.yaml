@@ -1,0 +1,396 @@
+units:
+  kx: u # 19mm MX spacing
+  ky: u # 19mm MX spacing
+  px: 2
+  py: 2
+
+  # visual_x/_y are built in units
+  # keycaps size in demo.dxf
+  visual_x: 18
+  visual_y: 17
+points:
+  zones:
+    matrix:
+      key.padding: kx
+      columns:
+        pinky:
+          origin: [ 0, -1ky ]
+          stagger: 0 ky
+          spread: kx
+          rotate: 8
+          key:
+            column_net: P20
+          rows:
+            top:
+              shift: [-kx, -ky]
+              bind: [0, px, 0, 0]
+            home:
+              shift: [0, 0]
+              bind: [2py+ky, 3px, py, px]
+            bottom:
+              shift: [0, 0]
+              bind: [0, px, 0, 0]
+        ring:
+          origin: [ 0, -1ky ]
+          stagger: 0.6 ky
+          spread: 0.97kx
+          rotate: -6
+          key:
+            column_net: P19
+            bind: [0, 2px, py, 0]
+        middle:
+          origin: [ 0, -1ky ]
+          stagger: 0.2 ky
+          spread: kx
+          rotate: -2
+          key:
+            column_net: P18
+            bind: [0, px, py, px]
+        index:
+          origin: [ 0, -1ky ]
+          stagger: -0.3 ky
+          spread: 0.97kx
+          rotate: -4
+          key:
+            column_net: P15
+            bind: [0, 0, py, 3px]
+        inner:
+          origin: [ 0, -1ky ]
+          stagger: -0.1 ky
+          spread: kx
+          key:
+            column_net: P14
+            bind: [0, 0.5px, py, px]
+      rows:
+        bottom:
+          row_net: P6
+        home:
+          row_net: P5
+        top:
+          row_net: P4
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-2.5kx, -1.3ky]
+      columns:
+        near:
+          spread: 2.2kx
+          origin: [-0.5 kx, -0.5 ky]
+          rotate: -5
+          key:
+            column_net: P19
+        home:
+          spread: 1kx
+          rotate: -20
+          origin: [-0.5 kx, -0.6 ky]
+          key:
+            column_net: P18
+        far:
+          spread: 1kx
+          rotate: -20
+          origin: [-0.5 kx, -0.6 ky]
+          key:
+            column_net: P15
+      rows:
+        thumb:
+          row_net: P7
+    encoder:
+      anchor:
+        ref: thumbfan_home_thumb
+        shift: [-0.2kx, 1.18ky]
+      columns:
+        far:
+          key:
+            column_net: P14
+      rows:
+        bottom:
+          row_net: P6
+outlines:
+  exports:
+    raw:
+      - type: keys
+        side: left
+        size: [kx, ky]
+        corner: px
+    _thumbfan_glue:
+      - type: polygon
+        points:
+          - ref: thumbfan_far_thumb
+            shift: [0.58 kx, 0.5 ky ]
+          - ref: thumbfan_far_thumb
+            shift: [0.58 kx, -0.5 ky]
+          - ref: thumbfan_near_thumb
+            shift: [0.5 px, -0.52 ky]
+          - ref: matrix_pinky_bottom
+            shift: [-0.5kx, -0.5ky]
+          - ref: matrix_pinky_bottom
+            shift: [-1.5kx, 0.5ky]
+          - ref: matrix_pinky_top
+            shift: [-0.65kx, 0.45ky]
+          - ref: matrix_ring_top
+            shift: [-0.5kx, 0.5ky]
+          - ref: matrix_ring_top
+            shift: [kx, 0.5ky]
+          - ref: matrix_inner_home
+            shift: [0, -0.25ky]
+          - ref: matrix_inner_home
+            shift: [1.75 kx, -ky]
+    _rounded_thumbfan_glue:
+      # Apply a fillet to the polygon specified above to round the corners
+      - type: outline
+        name: _thumbfan_glue
+        fillet: 3px
+    _controller_area:
+      - type: polygon
+        points:
+          - ref: matrix_inner_home
+            shift: [0, -0.25ky]
+          - ref: matrix_inner_top
+            shift: [0, 0.5ky]
+          - ref: matrix_inner_top
+            shift: [44, 0.5ky]
+          - ref: matrix_inner_bottom
+            shift: [36, -20]
+    _rounded_controller_area:
+      # Apply a fillet to the polygon specified above to round the corners
+      - type: outline
+        name: _controller_area
+        fillet: 2px
+    _encoder_cutout:
+      main:
+        type: rectangle
+        anchor:
+          ref:
+            - encoder_far_bottom
+          shift: [-7.25, -11.1]
+        size: [14.5, 18.1]
+    _screw_holes:
+      top_left:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [-32.815, 11.84]
+        radius: 1.1
+      bottom_left:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [-52.8, -32.45]
+        radius: 1.1
+      top_right:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [31.155, 2.05]
+        radius: 1.1
+      bottom_right:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [29.155, -39.51]
+        radius: 1.1
+      thumb:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [73.765, -58.71]
+        radius: 1.1
+    _magnet_holes:
+      top:
+        type: circle
+        anchor:
+          - ref: matrix_inner_top
+            shift: [0, 0]
+        radius: 7.5
+      center:
+        type: circle
+        anchor:
+          - ref: matrix_pinky_home
+            shift: [0, 0]
+        radius: 7.5
+      bottom:
+        type: circle
+        anchor:
+          - ref: matrix_inner_bottom
+            shift: [0, -1.3ky]
+        radius: 7.5
+    _camera_holes:
+      top_left:
+        type: circle
+        anchor:
+          - ref: matrix_ring_home
+        radius: 2.5527
+      top_center:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+        radius: 2.5527
+      top_right:
+        type: circle
+        anchor:
+          - ref: matrix_index_home
+        radius: 2.5527
+      center_left:
+        type: circle
+        anchor:
+          - ref: matrix_ring_bottom
+        radius: 2.5527
+      center_center:
+        type: circle
+        anchor:
+          - ref: matrix_middle_bottom
+        radius: 2.5527
+      center_right:
+        type: circle
+        anchor:
+          - ref: matrix_index_bottom
+        radius: 2.5527
+      bottom_left:
+        type: circle
+        anchor:
+          - ref: matrix_ring_bottom
+        radius: 2.5527
+    _mounting_holes:
+      $extends: outlines.exports._screw_holes
+      top_left:
+        radius: 1.9
+      bottom_left:
+        radius: 1.9
+      top_right:
+        radius: 1.9
+      bottom_right:
+        radius: 1.9
+      thumb:
+        radius: 1.9
+    _guard_holes:
+      guard_top:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [78.245, -0.46]
+        radius: 1.1
+      guard_bottom:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [59.265, -21.25]
+        radius: 1.1
+    _pcb_holes:
+      mounting_holes:
+        type: outline
+        name: _mounting_holes
+        operation: add
+      guard_holes:
+        type: outline
+        name: _guard_holes
+        operation: add
+    _switches:
+      main:
+        type: keys
+        side: left
+        size: 14 # 14mmx14mm cutouts will fit Choc and MX switches
+        bound: false
+    _keywell:
+      main:
+        type: outline
+        name: raw
+        fillet: 1
+      thumbfan:
+        type: outline
+        name: _rounded_thumbfan_glue
+        operation: add
+    _base:
+      main:
+        type: outline
+        name: _keywell
+        fillet: 1
+    keycaps:
+      main:
+        type: outline
+        name: _base
+      caps:
+        type: keys
+        side: left
+        size: [cx, cy]
+        bound: false
+        corner: 1
+        operation: subtract
+    pcb:
+      main:
+        type: outline
+        name: _base
+      controller:
+        type: outline
+        name: _rounded_controller_area
+        operation: add
+    bottom_plate:
+      main:
+        type: outline
+        name: _base
+      controller:
+        type: outline
+        name: _rounded_controller_area
+        operation: add
+      screw_holes:
+        type: outline
+        name: _screw_holes
+        operation: subtract
+      camera_holes:
+        type: outline
+        name: _camera_holes
+        operation: subtract
+      magnet_holes:
+        type: outline
+        name: _magnet_holes
+        operation: subtract
+    top_plate:
+      main:
+        type: outline
+        name: _base
+      switches:
+        type: outline
+        name: _switches
+        operation: subtract
+      screw_holes:
+        type: outline
+        name: _screw_holes
+        operation: subtract
+      encoder:
+        type: outline
+        name: _encoder_cutout
+        operation: subtract
+    preview:
+      main:
+        type: outline
+        name: pcb
+      top_plate:
+        type: outline
+        name: top_plate
+        operation: subtract
+      guard_holes:
+        type: outline
+        name: _guard_holes
+        operation: stack
+      pcb_holes:
+        type: outline
+        name: _pcb_holes
+        operation: stack
+      camera_holes:
+        type: outline
+        name: _camera_holes
+        operation: stack
+      magnet_holes:
+        type: outline
+        name: _magnet_holes
+        operation: stack
+cases:
+  top_plate:
+    - name: top_plate
+      extrude: 1.2
+      rotate: [0, 0, 0]
+      shift: [0, 0, 0]
+  bottom_plate:
+    - name: bottom_plate
+      extrude: 3
+      rotate: [0, 0, 0]
+      shift: [0, 0, 0]
