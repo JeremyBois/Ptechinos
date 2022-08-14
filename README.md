@@ -38,7 +38,7 @@ All production files are in `data/production` :
 
   - **PCB**
     - Improve / clean routing
-    - Dimensions (hxl): 110x159mm
+    - Dimensions (hxl): 111x159mm
     - Choc v1 spacing (with 1mm between keys added)
     - Add support for I2C components:
       - Cirque trackpad with FFC/FPC connector
@@ -255,7 +255,7 @@ Left           |  Right
       - [Trackpad on corne](https://beekeeb.com/cirque-trackpad-i2c-on-corne-keyboard/)
       - [Trackpad on Chunky V2](https://kbd.news/Chunky-V2-1219.html)
 
-  - [ ] Drawings on silkscreen should be more uniform on stroke thickness
+  - [x] Drawings on silkscreen should be more uniform on stroke thickness
 
   - [x] Add RP2040 MCU board in a ProMicro footprint
     - More SRAM to enable more stuff (RGB leds, pointing devices, OLED, ...)
@@ -312,7 +312,7 @@ Following colors can be used to get a correct approximation (without the gloss e
 
 
 ## I2C and pull-up
-
+  - [I2C tutorial](https://learn.sparkfun.com/tutorials/i2c)
   - [Good explanation of I2C pull-up resistors](https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/)
     - The I2C bus specification defines a maximum of *0.4V* for the low-level output voltage
     - Multiple devices can be on the same line if pull-up resistors are big enough
@@ -338,3 +338,14 @@ $$
   - [Sparkfun joystick](https://www.sparkfun.com/products/15168) with QWIIC interface
     - Op-out I2C pullup (2.2kΩ)[](https://cdn.sparkfun.com/assets/7/4/a/6/8/Qwiic_Joystick.pdf)
     - At most 2 joystick (($\frac{1}{\frac{2}{2.2}} = 1.1kΩ$)) with a KB2040 board
+
+
+## V0.5 VS v0.6
+
+Distance              | v0.6            | v0.5             | Result    |
+|---------------------|-----------------|------------------|-----------|
+Top to FarThumbs      | [69.31, 88.91]  | [70.905, 93.735] |  [✅, ✅] |
+Top to InnerThumbs    | [28.970, 67.89] | [31.885, 72.075] |  [😑, ✅] |
+Encoder to HomeThumbs | [3.432]         | [4.096]          |  [😑, 😑] |
+Top to OuterPinky     | [58.57, 37.64]  | [59.665, 40.315] |  [✅, ✅] |
+Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
