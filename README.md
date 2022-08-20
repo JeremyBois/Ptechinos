@@ -300,13 +300,14 @@ Following colors can be used to get a correct approximation (without the gloss e
 
   - Yellow = `#D5B619`
   - Blue = `#213754`
-  - Red = `#8D281D`
+  - Red = `#cc0000`
   - White = `#A7B5C2`
   - Black (matte) = `#353B3E`
   - Black (gloss) = `#131718`
   - Green (matte) = `#006F52`
   - Green (gloss) = `#005A44`
   - Copper Pad (gloss grey) = `#AFAF98`
+  - Purple = `#4b0082`
 
 
 
