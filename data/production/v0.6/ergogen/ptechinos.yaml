@@ -166,15 +166,15 @@ outlines:
       - type: outline
         name: _controller_area
         fillet: 1px
-    _top_encoder_cutout:
+    _top_encoder_exclude:
       main:
         type: rectangle
         anchor:
           ref:
             - matrix_pinky_top_encoder
           # Shift 1 pixel on the right because key not centered
-          shift: [-8.25, -7.25]
-        size: [17.5, 14.5]
+          shift: [-8.1, -7.25]
+        size: [17.85, 14.5]
     _bottom_encoder_cutout:
       main:
         type: rectangle
@@ -189,8 +189,8 @@ outlines:
         anchor:
           ref:
             - bottom_encoder_far_bottom
-          shift: [-10, -10]
-        size: [17, 20]
+          shift: [-10, -11.75]
+        size: [17, 22]
     _bottom_encoder_exclude_top_plate:
       main:
         type: rectangle
@@ -208,7 +208,7 @@ outlines:
         name: _bottom_encoder_exclude_top_plate
         fillet: 1px
       - type: outline
-        name: _top_encoder_cutout
+        name: _top_encoder_exclude
     _screw_holes:
       top_left:
         type: circle
