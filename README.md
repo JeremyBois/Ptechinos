@@ -11,12 +11,16 @@
   - 2 optional encoders (EVQWGD001) or keys (36 --> 38)
   - Outer columns for top pinky (reduce hand torsion)
   - Small splay to adjust to natural hand shape
-  - Cirque trackpad
-  - OLED screen
+  - I2C components
+    - Trackpad (GlidePoint Cirque Trackpad TM035035)
+    - OLED screen (Adafruit OLED SSD1306 Monochrome 1.3" 128x64)
+    - Trackball (Pixart PMW3360)
+    - Joystick (SparkFun Qwiic (COM-15168))
 
 **Software**
 
-  - [QMK layout](https://github.com/JeremyBois/qmk-ptechinos)
+  - [QMK layout v0.5](https://github.com/JeremyBois/qmk-ptechinos)
+
 
 ***
 **Drawings and 3D case design made with love by [pandhara](https://www.artstation.com/pandhara).**
@@ -32,7 +36,7 @@ All production files are in `data/production` :
 
 ## V0.6 - 🚧
 
-**Work in progress.**
+**WORK IN PROGRESS.**
 
 ### Changes
 
@@ -79,7 +83,6 @@ Left           |  Right
 
 
 ### Bill of materials (BOM)
-
 #### Base
 Part name | Amount | Reference sourced | Notes | Links
 :------------------------|:-------------------------:|:-------------------------:|:-------------------------|:-------------------------
@@ -240,8 +243,18 @@ Left           |  Right
 
 
 # Notes
+## v0.6
+### V0.5 VS v0.6
 
-## Todo (v0.6)
+Distance              | v0.6            | v0.5             | Result    |
+|---------------------|-----------------|------------------|-----------|
+Top to FarThumbs      | [69.31, 88.91]  | [70.905, 93.735] |  [✅, ✅] |
+Top to InnerThumbs    | [28.970, 67.89] | [31.885, 72.075] |  [😑, ✅] |
+Encoder to HomeThumbs | [3.432]         | [4.096]          |  [😑, 😑] |
+Top to OuterPinky     | [58.57, 37.64]  | [59.665, 40.315] |  [✅, ✅] |
+Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
+
+### Todo
 
   - [x] Add support for a GlidePoint Cirque circular trackpad using I2C
     - [Secifications](https://www.dropbox.com/s/2l2cywvwxdfnoyw/GP-DS-170409%20TM035035%20SPI-I2C%20PINN%20Trackpad%20Spec.pdf?dl=0)
@@ -249,11 +262,8 @@ Left           |  Right
     - Trackpad PCB must be adapted to be used with Elite-C MCU
       - Remove **R1** (SPI --> I2C)
       - Remove **R7** and **R8** (3.3V --> 5V VCC)
-    - References
-      - [QMK - trackpad support](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_pointing_device.md)
-      - [QMK - i2c wiring](https://docs.qmk.fm/#/feature_split_keyboard)
-      - [Trackpad on corne](https://beekeeb.com/cirque-trackpad-i2c-on-corne-keyboard/)
-      - [Trackpad on Chunky V2](https://kbd.news/Chunky-V2-1219.html)
+    - Trackpad PCB must be adapted to be used with KB2040 MCU
+      - Remove **R1** (SPI --> I2C)
 
   - [x] Drawings on silkscreen should be more uniform on stroke thickness
 
@@ -269,84 +279,13 @@ Left           |  Right
      - [SSD1327 Grayscale 1.5" 128x128 - QWIIC (RP2040 required and no QMK support)](https://www.adafruit.com/product/4741)
 
   - [x] Try [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
-    - R2  == row3 (schema) == bottom row
-    - R3  == row2 (schema) == home row
-    - R4  == row1 (schema) == top row
-    - Thumbs
-      - 1 x [R3X Convex 1U](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
-      - 2 x [T15 Thumb](https://www.asymplex.xyz/product/chicagosteno-convex-caps)
-      - [x] Check stem required orientation for outer and inner thumbs (see with asymplex)
 
-  - [ ] Try **QWIIC** as a hotswapable I2C with integrated pull-up resistors
-    - [Joystick](https://www.sparkfun.com/products/15168)
-    - [Adapter](https://www.sparkfun.com/products/14495)
-      - SDA and SCL are reversed making it non-compatible with OLED exposed connectors
-      - Using a [4-pins jumper](https://www.sparkfun.com/products/14425) is a better idea
+  - [x] Try **QWIIC** as a hotswapable I2C with integrated pull-up resistors
 
   - [ ] Try Female Threaded 1/4" Standoffs in Unibody case instead of Splikb tenting puck
-    - [Female Threaded Hex Standoffs ](https://www.mcmaster.com/standoffs/thread-size~1-4-20/length~1-4/)
 
   - [ ] Try [Choc to MX converter](https://www.thingiverse.com/thing:4504072) with custom artisan
 
   - [ ] Handle software difference between RP2040 and Atemega32U4 on QMK side
 
 
-
-## PCB/Solder Mask Colors
-![HackADay](https://hackaday.com/wp-content/uploads/2018/05/colorswatches.jpg?w=800)
-
-A detail description of available colors for PCB manufacturing by [Ben Vallack](https://www.youtube.com/watch?v=3PSUh6gRJk8).
-Following colors can be used to get a correct approximation (without the gloss effect):
-
-  - Yellow = `#D5B619`
-  - Blue = `#213754`
-  - Red = `#cc0000`
-  - White = `#A7B5C2`
-  - Black (matte) = `#353B3E`
-  - Black (gloss) = `#131718`
-  - Green (matte) = `#006F52`
-  - Green (gloss) = `#005A44`
-  - Copper Pad (gloss grey) = `#AFAF98`
-  - Purple = `#4b0082`
-
-
-
-
-## I2C and pull-up
-  - [I2C tutorial](https://learn.sparkfun.com/tutorials/i2c)
-  - [Good explanation of I2C pull-up resistors](https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/)
-    - The I2C bus specification defines a maximum of *0.4V* for the low-level output voltage
-    - Multiple devices can be on the same line if pull-up resistors are big enough
-
-$$
-\begin{aligned}
-& R_{VCC} = \frac{VCC - 0.4}{3mA} \\\\
-& R_{5} = \frac{5 - 0.4}{3} = 1.53kΩ \\\\
-& R_{3.3} = \frac{3.3 - 0.4}{3} = 967Ω
-\end{aligned}
-$$
-
-  - By connecting each device in parallel we decreased by the same amount the total resistance
-
-  - Ptechinos use 4.7kΩ resistors for the second I2C line (SDA1 / SCL1)
-    - 4.7kΩ resistors on 3.3V VCC allows up to $4$ devices ($\frac{1}{\frac{4}{4.7}} = 1.175kΩ$)
-
-  - [SSD1306 Monochrome 1.3" 128x64 - QWIIC](https://www.adafruit.com/product/938)
-    - Include with [2K resistors](https://cdn-shop.adafruit.com/datasheets/UG-2864HSWEG01+user+guide.pdf)
-    - Address is software controled allowing multiple screen to be connected on the same bus/line
-    - At most 2 screens (($\frac{1}{\frac{2}{2.2}} = 1.1kΩ$)) with a KB2040 board
-
-  - [Sparkfun joystick](https://www.sparkfun.com/products/15168) with QWIIC interface
-    - Op-out I2C pullup (2.2kΩ)[](https://cdn.sparkfun.com/assets/7/4/a/6/8/Qwiic_Joystick.pdf)
-    - At most 2 joystick (($\frac{1}{\frac{2}{2.2}} = 1.1kΩ$)) with a KB2040 board
-
-
-## V0.5 VS v0.6
-
-Distance              | v0.6            | v0.5             | Result    |
-|---------------------|-----------------|------------------|-----------|
-Top to FarThumbs      | [69.31, 88.91]  | [70.905, 93.735] |  [✅, ✅] |
-Top to InnerThumbs    | [28.970, 67.89] | [31.885, 72.075] |  [😑, ✅] |
-Encoder to HomeThumbs | [3.432]         | [4.096]          |  [😑, 😑] |
-Top to OuterPinky     | [58.57, 37.64]  | [59.665, 40.315] |  [✅, ✅] |
-Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
