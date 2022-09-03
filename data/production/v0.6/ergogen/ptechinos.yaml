@@ -138,7 +138,7 @@ outlines:
           - ref: matrix_inner_home
             shift: [0, -1.25ky]
           - ref: matrix_inner_home
-            shift: [2.08kx, -1.87ky]
+            shift: [2.07kx, -1.88ky]
     _rounded_thumbfan_glue:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
@@ -160,7 +160,7 @@ outlines:
           - ref: matrix_inner_top
             shift: [47, 0.753ky]
           - ref: matrix_inner_bottom
-            shift: [36.8, -25]
+            shift: [36.5, -25]
     _rounded_controller_area:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
