@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-08-24")
+    (date "2022-09-04")
     (rev "0.6")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
@@ -2359,6 +2359,10 @@
     (at 63.5 27.94 0)
     (effects (font (size 0.8 0.8)) (justify left bottom))
     (uuid 1b30208a-b616-4abe-a9b9-f820732d7b98)
+  )
+  (text "Pin 18 as Row5\nMouse buttons (L, M, R)" (at 88.9 52.07 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid 3ca9ed69-6db8-4c7d-9326-682c29cc9843)
   )
   (text "Connectors" (at 176.53 115.57 0)
     (effects (font (size 2 2)) (justify left bottom))
