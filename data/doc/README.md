@@ -89,11 +89,29 @@
     - [On Chunky V2](https://kbd.news/Chunky-V2-1219.html)
 
 
+### Others
+
+   - Socket strips
+     - [Low Profile Socket Strip (squared pins)](https://www.mouser.fr/ProductDetail/Samtec/CES-104-01-L-S?qs=PB6%2FjmICvI1cSb0fQjZcig%3D%3D)
+   - Reset button (top or right angle)
+     - [Trough hole](https://splitkb.com/collections/keyboard-parts/products/reset-buttons)
+   - Tact switches for mouse buttons (requires a new row on pin 18)
+     -  [Tact switches](https://en.jian-fu.com/product/48.html)
+
 
 ## Tools
   - [Ergogen (online)](https://ergogen.cache.works/)
   - [OpenScad](https://openscad.org/)
   - [Gerber viewer (online)](https://www.gerberviewer.io/view)
+
+
+## References
+
+  - [Dilemma](https://kbd.news/Dilemma-keyboard-1557.html)
+  - [UniChunky](https://kbd.news/UniChunky-1579.html)
+  - [Santoku](https://kbd.news/Santoku-Gen-2-842.html)
+  - [Pteron36](https://github.com/harshitgoel96/pteron36-split-keyboard)
+  - [Buzzard](https://github.com/crehmann/Buzzard)
 
 
 ## PCB manufacturing

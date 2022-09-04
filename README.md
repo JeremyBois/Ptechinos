@@ -11,11 +11,13 @@
   - 2 optional encoders (EVQWGD001) or keys (36 --> 38)
   - Outer columns for top pinky (reduce hand torsion)
   - Small splay to adjust to natural hand shape
+  - Columns stagger with extreme pinky stagger
   - I2C components
     - Trackpad (GlidePoint Cirque Trackpad TM035035)
     - OLED screen (Adafruit OLED SSD1306 Monochrome 1.3" 128x64)
-    - Trackball (Pixart PMW3360)
     - Joystick (SparkFun Qwiic (COM-15168))
+  - Serial components
+    - Trackball (Pixart PMW3360, 25mm ball used)
 
 **Software**
 
@@ -43,7 +45,9 @@ All production files are in `data/production` :
   - **PCB**
     - Improve / clean routing
     - Dimensions (hxl): 111x159mm
-    - Choc v1 spacing (with 1mm between keys added)
+    - Choc v1 spacing (with 1mm padding)
+    - Add support for Serial components:
+      - Trackball (Pixart PMW3360)
     - Add support for I2C components:
       - Cirque trackpad with FFC/FPC connector
       - OLED with socketing / QWIIC (Require KP2040)
@@ -53,9 +57,14 @@ All production files are in `data/production` :
       - Change right/left thumbs orientation (+-90°)
       - Increase spacing between thumbs (+5mm)
       - Reduce rotation between thumbs (-5°)
-    - Change board connection for encoders to free KB2040 only 4 analog pins
-      - From F5/F4 to D4/C6 pins
+    - Encoders
+      - Thumb encoder pins connection change (F5/F4 to D4/C6)
+      - Index encoder at the top left as an alternative to thumb encoder
+      - Both encoders can be used at the same time
     - Make more space for encoder / optional key for MX keycaps (using [this adapter](https://www.thingiverse.com/thing:4504072))
+    - Add Pogo connectors support
+      - Safer alternative to TRRS (no shorts, disconnect gently)
+      - Allow to switch between split and unsplit
 
   - **Sandwich case**
     - Bottom plate
@@ -64,13 +73,21 @@ All production files are in `data/production` :
     - Top plate
       - Encoder / Key (above thumbs cluster) excluded from plate
 
-  - **Unibody case**
-    - 3D case added
-    - Support for both OLED and Cirque 35mm trackpad modules
+  - **Unibody case**  (WORK IN PROGRESS)
+    - 3D case
+    - Support for different modules:
+      - OLED Adafruit OLED SSD1306 Monochrome (1.3 "128x64)
+      - Trackpad GlidePoint Cirque Trackpad TM035035 (35mm flat)
+      - Trackball Pixart PMW3360 (25mm ball)
+      - Unsplit both parts (pogo connectors)
+      - Bottom plate with 1/4inches and magnets to connect to camera mounts
+        - Plate stays on the mount
+        - Keyboard clip with magnet to the plate
 
 
   - **Misc**
     - Add bill of material (BOM)
+    - Add documentation abouts parts
 
 
 Left           |  Right
@@ -288,4 +305,26 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
 
   - [ ] Handle software difference between RP2040 and Atemega32U4 on QMK side
 
+  - [x] Add pogo magnetic connectors (4 pins) as an alternative for TRRS
+    - Can be used to merge both half to create an unsplit keyboard
+
+  - [x] Update top plate bottom right hole
+
+  - [x] Bluetooth
+    - Move capacitor in another place
+    - Remove or move B-/B+ pins (duplicates)
+
+  - [ ] Regenerate output previews with correct dates
+
+  - [ ] Find and try pogo connector (4 pins)
+
+
+
+## Kicad errors
+
+  - Courtyard FPC connector and jumpers overlap
+    - It's ok because both are not used at the same time
+
+  - FPC pins are not connected
+    - It's ok because we only use 4 of them (I2C)
 
