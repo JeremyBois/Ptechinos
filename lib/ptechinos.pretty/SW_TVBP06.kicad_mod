@@ -1,4 +1,4 @@
-(footprint "TACT_SWITCH_TVBP06" (version 20211014) (generator pcbnew)
+(footprint "SW_TVBP06" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 5E98AB39)
   (descr "2 pins switch")
