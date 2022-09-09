@@ -2,12 +2,14 @@
 
 ## Whislist
 
-  - [ ] Breakout board
-    - [PMW3360](https://www.tindie.com/products/jkicklighter/pmw3360-motion-sensor)
-    - [PMW3389](https://www.tindie.com/products/jkicklighter/pmw3389-motion-sensor/)
-  - [ ] Trackball 34mm
-  - [ ] Bearing balls 2.5mm zirconium oxide (G5)
-  - [ ] 3D case for trackball (?? same place as Cirque trackpad ??)
+  - Trackball
+    - [ ] Ball 25mm
+    - [ ] Bearing balls 2.5mm zirconium oxide (G5)
+    - [ ] Headers male for SPI + cables
+    - [ ] Cable female headers to connect to male exposed on PCB
+    - [ ] Breakout board
+      - [PMW3360](https://www.tindie.com/products/jkicklighter/pmw3360-motion-sensor)
+      - [PMW3389](https://www.tindie.com/products/jkicklighter/pmw3389-motion-sensor/)
 
 
 ## RP2040
@@ -40,6 +42,7 @@
   - PCB
     - [3.3V](https://github.com/jfedor2/pmw3360-breakout)
     - [3.3V or 5V](https://github.com/Ariamelon/Ogen)
+    - [Circular - Charybdis keyboard](https://github.com/Bastardkb/charybdis-pmw-3360-sensor-pcb)
 
   - Bearing ball
     - [1/8Inch bearing balls](https://www.amazon.fr/c%C3%A9ramique-roulement-pr%C3%A9cision-Nitrure-silicium/dp/B073XKSK2F)
@@ -97,7 +100,8 @@
      - [Trough hole](https://splitkb.com/collections/keyboard-parts/products/reset-buttons)
    - Tact switches for mouse buttons (requires a new row on pin 18)
      -  [Tact switches](https://en.jian-fu.com/product/48.html)
-
+   - Male header right angle (Trackball pins)
+     - [Sparkfun](https://www.sparkfun.com/products/553)
 
 ## Tools
   - [Ergogen (online)](https://ergogen.cache.works/)

@@ -6,22 +6,47 @@
 
 **Hardware**
 
-  - 36 keys (kailh choc v1)
-  - 5x3 keys layout + 3 thumb keys
-  - 2 optional encoders (EVQWGD001) or keys (36 --> 38)
-  - Outer columns for top pinky (reduce hand torsion)
-  - Small splay to adjust to natural hand shape
-  - Columns stagger with extreme pinky stagger
-  - I2C components
-    - Trackpad (GlidePoint Cirque Trackpad TM035035)
-    - OLED screen (Adafruit OLED SSD1306 Monochrome 1.3" 128x64)
-    - Joystick (SparkFun Qwiic (COM-15168))
-  - Serial components
-    - Trackball (Pixart PMW3360, 25mm ball used)
+  - 36 keys (Kailh choc v1)
+    - 5x3 keys layout + 3 thumb keys
+    - 2 optional encoders (EVQWGD001) or keys (36 --> 38)
+      - Top pinky
+      - Above thumbs
+    - Outer columns for top pinky
+      - L size movement reduce hand torsion
+      - Top pinky still available (key or encoder)
+    - Small splay to adjust to natural hand shape
+    - Columns stagger with extreme pinky stagger
+
+  - Modular
+    - I2C components
+      - Trackpad (GlidePoint Cirque Trackpad TM035035)
+      - OLED screen (Adafruit OLED SSD1306 Monochrome 1.3" 128x64)
+      - Any I2C device (like SparkFun Qwiic COM-15168)
+        - Interface 1: Qwiic connection
+        - Interface 2: Header pins exposed (1x04 with 2.54mm pitch)
+    - SPI components (RP2040 only)
+      - Trackball (Pixart PMW3360, 25mm ball used)
+      - Any SPI device: header pins exposed (2x04 with 1.27mm pitch)
+
+    - Pogo (magnetic) or TRRS to connect both halves
+      - TRRS: More option but not safe (shorts, hard to disconnect in case of tear-out)
+      - Pogo: Less option but safe (no shorts, safely disconnect in case of tear-out)
+
+    - Split or Unsplit
+      - Use magnetic Pogo pins and a central module
+
+  - Bluetooth ready
+    - On/Off switch to avoid losing battery
+    - JST PH connectors to make it easy to replace the battery
+    - MCU board footprint compatible with *Nice!nano* and like
+    - Components support is ZMK dependent
+
+
 
 **Software**
 
   - [QMK layout v0.5](https://github.com/JeremyBois/qmk-ptechinos)
+
 
 
 ***
@@ -79,7 +104,7 @@ All production files are in `data/production` :
       - OLED Adafruit OLED SSD1306 Monochrome (1.3 "128x64)
       - Trackpad GlidePoint Cirque Trackpad TM035035 (35mm flat)
       - Trackball Pixart PMW3360 (25mm ball)
-      - Unsplit both parts (pogo connectors)
+      - Unsplit both parts (Pogo connectors)
       - Bottom plate with 1/4inches and magnets to connect to camera mounts
         - Plate stays on the mount
         - Keyboard clip with magnet to the plate
@@ -87,7 +112,7 @@ All production files are in `data/production` :
 
   - **Misc**
     - Add bill of material (BOM)
-    - Add documentation abouts parts
+    - Add documentation about parts
 
 
 Left           |  Right
@@ -169,16 +194,16 @@ M2 Guard Spacers | 6 | TODO |
 
 ## V0.5 - ✅
 
-  - Update ergogen config
+  - Update Ergogen config
     - automatic plates generation (2d/3d)
-    - remove pcb components (unused)
+    - remove PCB components (unused)
     - add bottom magnets / camera mounts holes
     - add preview drawing to make easier to visualize plates stack
-  - Update pcb board constraints with more aggressive minimums
-  - Update PCB according to new ergogen plate config
+  - Update PCB board constraints with more aggressive minimums
+  - Update PCB according to new Ergogen plate config
   - PCB
-    - Improve silkscreens ajustements
-    - More aggresive thumb angle
+    - Improve silkscreens adjustments
+    - More aggressive thumb angle
     - Lower thumbs keys
     - Encoder angle is now the same as the thumb key below
     - Update board dimensions
@@ -199,7 +224,7 @@ Left           |  Right
 
 ## V0.4 - ⚰️
 
-  - Update Readme
+  - Update README
     - Add credits
     - Add pictures
     - Add notes for available mask colors
@@ -223,7 +248,7 @@ Left           |  Right
     - Correct mounting holes size
     - Add MCU guard holes
     - Complete plates (top / bottom)
-  - Add logo to silkcreen (draft)
+  - Add logo to silkscreen (draft)
   - Find keyboard name
   - Bottom plate uses 10cm magnet holes
 
@@ -233,7 +258,7 @@ Left           |  Right
 
 ## V0.2 - ⚰️
 
-  - Add bluetooth components
+  - Add Bluetooth components
     - On/off switch
     - Capacitor
     - Battery support
@@ -260,20 +285,20 @@ Left           |  Right
 
 
 # Notes
-## v0.6
-### V0.5 VS v0.6
+## V0.5 VS v0.6
 
 Distance              | v0.6            | v0.5             | Result    |
 |---------------------|-----------------|------------------|-----------|
 Top to FarThumbs      | [69.31, 88.91]  | [70.905, 93.735] |  [✅, ✅] |
-Top to InnerThumbs    | [28.970, 67.89] | [31.885, 72.075] |  [😑, ✅] |
-Encoder to HomeThumbs | [3.432]         | [4.096]          |  [😑, 😑] |
+Top to InnerThumbs    | [28.970, 67.89] | [31.885, 72.075] |  [✅, ✅] |
+Encoder to HomeThumbs | [ , 3.432]      | [ ,    4.096]    |  [  , 😑] |
 Top to OuterPinky     | [58.57, 37.64]  | [59.665, 40.315] |  [✅, ✅] |
 Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
 
-### Todo
 
-  - [x] Add support for a GlidePoint Cirque circular trackpad using I2C
+### TODO
+
+  - [x] GlidePoint Cirque circular trackpad (I2C)
     - [Secifications](https://www.dropbox.com/s/2l2cywvwxdfnoyw/GP-DS-170409%20TM035035%20SPI-I2C%20PINN%20Trackpad%20Spec.pdf?dl=0)
     - [Schematic](https://www.dropbox.com/s/vk752nkoqo7jbqw/02-000611-00RevA01_TM035035-2024-000_SCH.pdf?dl=0)
     - Trackpad PCB must be adapted to be used with Elite-C MCU
@@ -282,42 +307,64 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
     - Trackpad PCB must be adapted to be used with KB2040 MCU
       - Remove **R1** (SPI --> I2C)
 
-  - [x] Drawings on silkscreen should be more uniform on stroke thickness
 
-  - [x] Add RP2040 MCU board in a ProMicro footprint
+  - [x] RP2040 MCU board in a ProMicro footprint
     - More SRAM to enable more stuff (RGB leds, pointing devices, OLED, ...)
     - Better pointing device experience ([smoother trackpad experience](https://www.reddit.com/r/ErgoMechKeyboards/comments/w6r7on/comment/ihfko44/?utm_source=share&utm_medium=web2x&context=3))
     - **QWIIC** connector for easy to plug I2C devices
 
-   - [x] Add OLED support
+   - [x] OLED support (I2C)
      - [QMK support](https://docs.qmk.fm/#/feature_oled_driver?id=basic-configuration)
      - [SSD1306 Monochrome 1.3" 128x64 - QWIIC](https://www.adafruit.com/product/938)
      - [SSD1306 Monochrome 0.96" 128x64 - pins](https://splitkb.com/products/oled-display?variant=31226608549965)
      - [SSD1327 Grayscale 1.5" 128x128 - QWIIC (RP2040 required and no QMK support)](https://www.adafruit.com/product/4741)
 
-  - [x] Try [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
+  - Bluetooth
+    - [x] Remove `VCC_ON` (was used to isolated `VCC` line but most MCU have this as a software feature)
+    - [ ] Remove redundant B+ and B- pins (ones on the connector foo)
 
-  - [x] Try **QWIIC** as a hotswapable I2C with integrated pull-up resistors
+  - Pogo
+    - [x] Add Pogo magnetic connectors (4 pins) as an alternative for TRRS
+      - Can be used to merge both half to create an unsplit keyboard
+    - [ ] Find and try Pogo connector (4 pins)
+    - [ ] Check 3D works (unibody case)
+    - [ ] Module to unsplit the keyboard
 
-  - [ ] Try Female Threaded 1/4" Standoffs in Unibody case instead of Splikb tenting puck
+  - PCB indications / information
+    - [ ] Side used to bridge jumpers
+    - [ ] Side used to solder components
+    - [x] Drawings on silkscreen should be more uniform on stroke thickness
 
-  - [ ] Try [Choc to MX converter](https://www.thingiverse.com/thing:4504072) with custom artisan
+  - Trackball
+    - [x] Move Reset below Pogo to make space for SPI interface
+    - [x] Add SPI interface (in place of Reset) (4 pins x 2)
+    - [ ] Check 3D works (unibody case)
 
-  - [ ] Handle software difference between RP2040 and Atemega32U4 on QMK side
+  - Outputs (v0.65)
+    - [ ] Update PCB / Schema date
+    - [ ] Regenerate DXF (mm)
+    - [ ] Regenerate gerbers (inch)
+    - [ ] Regenerate previews
+    - [ ] Push gerbers
 
-  - [x] Add pogo magnetic connectors (4 pins) as an alternative for TRRS
-    - Can be used to merge both half to create an unsplit keyboard
+  - Documentation
+    - [ ] Update reset switch
+    - [ ] Add missing
+      - [ ] Pogo
+    - [ ] Add Build logs
+    - [ ] Add Wiki
 
-  - [x] Update top plate bottom right hole
+  - Software
+    - [ ] Handle difference between RP2040 and Atemega32U4 on QMK side
+      - Trackball (SPI) only compatible with RP2040
 
-  - [x] Bluetooth
-    - Move capacitor in another place
-    - Remove or move B-/B+ pins (duplicates)
-
-  - [ ] Regenerate output previews with correct dates
-
-  - [ ] Find and try pogo connector (4 pins)
-
+  - Try
+    - [x] [Choc keycaps tilter](https://www.thingiverse.com/thing:5379000)
+    - [x] Create [Choc keycaps tilter](https://www.thingiverse.com/thing:5379000) variant with 90° angle (to test on outer pinky)
+    - [x] [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
+    - [ ] **QWIIC** as a hotswapable I2C with integrated pull-up resistors
+    - [ ] Female Threaded 1/4" Standoffs in Unibody case instead of Splikb tenting puck (smaller hole ...)
+    - [ ] [Choc to MX converter](https://www.thingiverse.com/thing:4504072) with custom artisan
 
 
 ## Kicad errors
