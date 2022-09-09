@@ -321,7 +321,7 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
 
   - Bluetooth
     - [x] Remove `VCC_ON` (was used to isolated `VCC` line but most MCU have this as a software feature)
-    - [ ] Remove redundant B+ and B- pins (ones on the connector foo)
+    - [x] Remove redundant B+ and B- pins (ones on the connector foo)
 
   - Pogo
     - [x] Add Pogo magnetic connectors (4 pins) as an alternative for TRRS
