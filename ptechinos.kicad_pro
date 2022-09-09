@@ -388,8 +388,7 @@
         "microvia_drill": 0.1,
         "name": " Power",
         "nets": [
-          "VCC",
-          "VCC_ON",
+          "3.3V",
           "bat+",
           "raw"
         ],
