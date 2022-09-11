@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-09-09")
+    (date "2022-09-11")
     (rev "0.6")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
@@ -3089,7 +3089,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 147.32 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2d37f439-0d7f-4788-b594-385650fc88af)
-    (property "Reference" "#FLG?" (id 0) (at 147.32 102.235 0)
+    (property "Reference" "#FLG0101" (id 0) (at 147.32 102.235 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (id 1) (at 147.32 99.06 0))
@@ -4369,7 +4369,7 @@
       (reference "#FLG02") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/2d37f439-0d7f-4788-b594-385650fc88af"
-      (reference "#FLG?") (unit 1) (value "PWR_FLAG") (footprint "")
+      (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/407a10f1-5f16-4d01-ac6f-3c6a4a8e75bd"
       (reference "#PWR01") (unit 1) (value "GND") (footprint "")
