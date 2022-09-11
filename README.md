@@ -298,6 +298,11 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
 
 ### TODO
 
+  - [x] RP2040 MCU board in a ProMicro footprint
+    - More SRAM to enable more stuff (RGB leds, pointing devices, OLED, ...)
+    - Better pointing device experience ([smoother trackpad experience](https://www.reddit.com/r/ErgoMechKeyboards/comments/w6r7on/comment/ihfko44/?utm_source=share&utm_medium=web2x&context=3))
+    - **QWIIC** connector for easy to plug I2C devices
+
   - [x] GlidePoint Cirque circular trackpad (I2C)
     - [Secifications](https://www.dropbox.com/s/2l2cywvwxdfnoyw/GP-DS-170409%20TM035035%20SPI-I2C%20PINN%20Trackpad%20Spec.pdf?dl=0)
     - [Schematic](https://www.dropbox.com/s/vk752nkoqo7jbqw/02-000611-00RevA01_TM035035-2024-000_SCH.pdf?dl=0)
@@ -306,18 +311,16 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
       - Remove **R7** and **R8** (3.3V --> 5V VCC)
     - Trackpad PCB must be adapted to be used with KB2040 MCU
       - Remove **R1** (SPI --> I2C)
+    - [x] Clear enough space to make possible to use both FFC and Qwiic connectors
+    - [x] Make sure pin assignation on FFC connector is correct
 
-
-  - [x] RP2040 MCU board in a ProMicro footprint
-    - More SRAM to enable more stuff (RGB leds, pointing devices, OLED, ...)
-    - Better pointing device experience ([smoother trackpad experience](https://www.reddit.com/r/ErgoMechKeyboards/comments/w6r7on/comment/ihfko44/?utm_source=share&utm_medium=web2x&context=3))
-    - **QWIIC** connector for easy to plug I2C devices
-
-   - [x] OLED support (I2C)
-     - [QMK support](https://docs.qmk.fm/#/feature_oled_driver?id=basic-configuration)
-     - [SSD1306 Monochrome 1.3" 128x64 - QWIIC](https://www.adafruit.com/product/938)
-     - [SSD1306 Monochrome 0.96" 128x64 - pins](https://splitkb.com/products/oled-display?variant=31226608549965)
-     - [SSD1327 Grayscale 1.5" 128x128 - QWIIC (RP2040 required and no QMK support)](https://www.adafruit.com/product/4741)
+  - [x] OLED support (I2C)
+    - [QMK support](https://docs.qmk.fm/#/feature_oled_driver?id=basic-configuration)
+    - [SSD1306 Monochrome 1.3" 128x64 - QWIIC](https://www.adafruit.com/product/938)
+    - [SSD1306 Monochrome 0.96" 128x64 - pins](https://splitkb.com/products/oled-display?variant=31226608549965)
+    - [SSD1327 Grayscale 1.5" 128x128 - QWIIC (RP2040 required and no QMK support)](https://www.adafruit.com/product/4741)
+    - [x] Qwiic accessible
+    - [x] Header pins accessible
 
   - Bluetooth
     - [x] Remove `VCC_ON` (was used to isolated `VCC` line but most MCU have this as a software feature)
@@ -340,23 +343,25 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
     - [x] Add SPI interface (in place of Reset) (4 pins x 2)
     - [ ] Check 3D works (unibody case)
 
-  - Outputs (v0.65)
-    - [ ] Update PCB / Schema date
-    - [ ] Regenerate DXF (mm)
-    - [ ] Regenerate gerbers (inch)
-    - [ ] Regenerate previews
-    - [ ] Push gerbers
-
   - Documentation
     - [ ] Update reset switch
     - [ ] Add missing
       - [ ] Pogo
+      - [ ] Header pins PCB
+      - [ ] Header pins Trackball
     - [ ] Add Build logs
     - [ ] Add Wiki
 
   - Software
     - [ ] Handle difference between RP2040 and Atemega32U4 on QMK side
       - Trackball (SPI) only compatible with RP2040
+
+  - Outputs (v0.65)
+    - [x] Update PCB / Schema date
+    - [x] Regenerate DXF (mm)
+    - [x] Regenerate gerbers (inch)
+    - [x] Regenerate previews
+    - [ ] Push gerbers
 
   - Try
     - [x] [Choc keycaps tilter](https://www.thingiverse.com/thing:5379000)
