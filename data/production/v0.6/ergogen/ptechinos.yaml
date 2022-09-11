@@ -64,7 +64,7 @@ points:
           spread: spreadX
           key:
             column_net: P14
-            bind: [1.5py, 0.5px, py, px]
+            bind: [1.8py, 0.5px, py, px]
       rows:
         bottom:
           row_net: P6
@@ -152,15 +152,13 @@ outlines:
           - ref: matrix_inner_home
             shift: [0.2kx, -1.5ky]
           - ref: matrix_inner_top
-            shift: [0.55kx, 0.64ky]
+            shift: [0.54kx, 0.69ky]
           - ref: matrix_inner_top
-            shift: [0.56kx, 0.62ky]
+            shift: [0.56kx, 0.67ky]
           - ref: matrix_inner_top
-            shift: [0.57kx, 0.61ky]
+            shift: [0.58kx, 0.665ky]
           - ref: matrix_inner_top
-            shift: [0.6kx, 0.605ky]
-          - ref: matrix_inner_top
-            shift: [47, 0.753ky]
+            shift: [47.155, 0.816ky]
           - ref: matrix_inner_bottom
             shift: [36.5, -25]
     _rounded_controller_area:
