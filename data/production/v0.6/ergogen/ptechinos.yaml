@@ -209,6 +209,22 @@ outlines:
         fillet: 1px
       - type: outline
         name: _top_encoder_exclude
+    _far_thumb_15U:
+      main:
+        type: rectangle
+        anchor:
+          ref:
+            - thumbfan_far_thumb
+          shift: [-0.5ky, -0.75kx]
+        size: [ky, 1.5kx]
+    _near_thumb_15U:
+      main:
+        type: rectangle
+        anchor:
+          ref:
+            - thumbfan_near_thumb
+          shift: [-0.5ky, -0.75kx]
+        size: [ky, 1.5kx]
     _screw_holes:
       top_left:
         type: circle
@@ -391,6 +407,14 @@ outlines:
         size: [cx, cy]
         bound: false
         corner: 1
+        operation: stack
+      near_thumb:
+        type: outline
+        name: _near_thumb_15U
+        operation: stack
+      far_thumb:
+        type: outline
+        name: _far_thumb_15U
         operation: stack
     preview:
       main:
