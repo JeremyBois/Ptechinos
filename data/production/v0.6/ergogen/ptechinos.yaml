@@ -136,11 +136,11 @@ outlines:
           - ref: matrix_ring_top
             shift: [kx, 0.7ky]
           - ref: matrix_inner_home
-            shift: [0, -1.39ky]
-          - ref: matrix_inner_home
-            shift: [2.06kx, -1.985ky]
-          - ref: matrix_inner_home
-            shift: [2.078kx, -2.05ky]
+            shift: [0, -0.9ky]
+          - ref: matrix_inner_bottom
+            shift: [40, 0]
+          - ref: matrix_inner_bottom
+            shift: [2.1kx, -ky]
     _rounded_thumbfan_glue:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
@@ -197,8 +197,8 @@ outlines:
         anchor:
           ref:
             - bottom_encoder_far_bottom
-          shift: [0, -3]
-        size: [20, 15]
+          shift: [-16.7, 6]
+        size: [40, 10]
     _rounded_encoder_exclude:
       # Apply a fillet to the polygon specified above to round the corners
       - type: outline
