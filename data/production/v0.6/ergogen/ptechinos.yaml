@@ -214,36 +214,43 @@ outlines:
             - thumbfan_near_thumb
           shift: [-0.5ky, -0.75kx]
         size: [ky, 1.5kx]
+    _trackpad:
+      pad:
+        type: circle
+        anchor:
+          - ref: matrix_middle_home
+            shift: [69.27, -7.52]
+        radius: 17.5
     _screw_holes:
       top_left:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [-33.88, 14.42]
+            shift: [-33.6, 14.24]
         radius: 1.1
       bottom_left:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [-52.8, -32.45]
+            shift: [-52.81, -32.44]
         radius: 1.1
       top_right:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [31.155, 2.05]
+            shift: [30.09, 2.11]
         radius: 1.1
       bottom_right:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [29.25, -38.58]
+            shift: [29.92, -38.02]
         radius: 1.1
       thumb:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [68.48, -51.69]
+            shift: [66.31, -54.12]
         radius: 1.1
     _magnet_holes:
       top:
@@ -288,19 +295,19 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [74.47, 16.64]
+            shift: [74.47, 16.55]
         radius: 1.1
       guard_bottom_left:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [53.19, -23.29]
+            shift: [53.02, -23.12]
         radius: 1.1
       guard_bottom_right:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [71.8, -29.5]
+            shift: [73.03, -29.66]
         radius: 1.1
     _pcb_holes:
       mounting_holes:
@@ -327,13 +334,6 @@ outlines:
         name: _glue
         operation: add
         fillet: 4
-    trackpad:
-      pad:
-        type: circle
-        anchor:
-          - ref: matrix_middle_home
-            shift: [70, -0.4ky]
-        radius: 17.5
     _base:
       main:
         type: outline
@@ -440,9 +440,9 @@ outlines:
         type: outline
         name: _encoder_cutouts
         operation: stack
-      trackpad:
+      _trackpad:
         type: outline
-        name: trackpad
+        name: _trackpad
         operation: stack
       near_thumb:
         type: outline
