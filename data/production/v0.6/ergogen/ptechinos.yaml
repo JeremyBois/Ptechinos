@@ -136,7 +136,11 @@ outlines:
           - ref: matrix_ring_top
             shift: [-0.6kx, 0.7ky]
           - ref: matrix_ring_top
-            shift: [kx, 0.7ky]
+            shift: [0.5kx, 0.72ky]
+          - ref: matrix_ring_top
+            shift: [0.51kx, 0.73ky]
+          - ref: matrix_ring_top
+            shift: [0.52kx, 0.74ky]
           - ref: matrix_inner_bottom
             shift: [39.8, -0.51ky]
           - ref: matrix_inner_bottom
@@ -147,9 +151,9 @@ outlines:
       - type: polygon
         points:
           - ref: matrix_inner_top
-            shift: [0.555kx, 0.67ky]
+            shift: [0.5555kx, 0.67ky]
           - ref: matrix_inner_top
-            shift: [48, 0.816ky]
+            shift: [48, 0.826ky]
           - ref: matrix_inner_bottom
             shift: [39.8, -0.51ky]
           - ref: matrix_inner_bottom
@@ -329,7 +333,7 @@ outlines:
         type: outline
         name: raw
         fillet: 0.5
-      glue:
+      _glue:
         type: outline
         name: _glue
         operation: add
