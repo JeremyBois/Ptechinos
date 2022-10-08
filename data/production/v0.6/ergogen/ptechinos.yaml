@@ -311,7 +311,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_middle_home
-            shift: [73.03, -29.66]
+            shift: [73.82, -30.09]
         radius: 1.1
     _pcb_holes:
       mounting_holes:
