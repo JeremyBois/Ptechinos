@@ -285,8 +285,7 @@ Left           |  Right
 
 
 # Notes
-## V0.5 VS v0.6
-
+## v0.5 VS v0.6
 Distance              | v0.6            | v0.5             | Result    |
 |---------------------|-----------------|------------------|-----------|
 Top to FarThumbs      | [69.31, 88.91]  | [70.905, 93.735] |  [✅, ✅] |
@@ -295,6 +294,15 @@ Encoder to HomeThumbs | [ , 3.432]      | [ ,    4.096]    |  [  , 😑] |
 Top to OuterPinky     | [58.57, 37.64]  | [59.665, 40.315] |  [✅, ✅] |
 Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
 
+## v0.5 VS v0.66
+Distance              | v0.66            | v0.5             | Result    |
+|---------------------|-----------------|------------------|-----------|
+Top to FarThumbs      | [70.04, 87.98]  | [70.905, 93.735] |  [✅, ✅] |
+Top to InnerThumbs    | [28.83, 67.71]  | [31.885, 72.075] |  [✅, ✅] |
+Encoder to HomeThumbs | [ , 3.556]      | [ ,    4.096]    |  [  , 😑] |
+Top to OuterPinky     | [57.54, 37.07]  | [59.665, 40.315] |  [✅, ✅] |
+Home to HomeThumbs    | [30.456, 52.97] | [32.246, 54.7]   |  [✅, ✅] |
+
 
 ### TODO
 
@@ -302,6 +310,8 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
     - More SRAM to enable more stuff (RGB leds, pointing devices, OLED, ...)
     - Better pointing device experience ([smoother trackpad experience](https://www.reddit.com/r/ErgoMechKeyboards/comments/w6r7on/comment/ihfko44/?utm_source=share&utm_medium=web2x&context=3))
     - **QWIIC** connector for easy to plug I2C devices
+    - [ ] Find headers perfect height
+
 
   - [x] GlidePoint Cirque circular trackpad (I2C)
     - [Secifications](https://www.dropbox.com/s/2l2cywvwxdfnoyw/GP-DS-170409%20TM035035%20SPI-I2C%20PINN%20Trackpad%20Spec.pdf?dl=0)
@@ -325,30 +335,43 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
   - Bluetooth
     - [x] Remove `VCC_ON` (was used to isolated `VCC` line but most MCU have this as a software feature)
     - [x] Remove redundant B+ and B- pins (ones on the connector foo)
+    - [ ] Make sure there is enough place for battery JST
 
   - Pogo
     - [x] Add Pogo magnetic connectors (4 pins) as an alternative for TRRS
       - Can be used to merge both half to create an unsplit keyboard
-    - [ ] Find and try Pogo connector (4 pins)
+    - [x] Find Pogo connector (4 pins)
+    - [x] Find Pogo connector (8 pins)
     - [ ] Check 3D works (unibody case)
-    - [ ] Module to unsplit the keyboard
+      - Works (tested with 4 pins version)
 
   - PCB indications / information
-    - [ ] Side used to bridge jumpers
-    - [ ] Side used to solder components
+    - Solder on the bottom side
+      - Resistors
+      - Capacitor
+      - Reset switch
+      - Diodes
+      - Hotswaps
     - [x] Drawings on silkscreen should be more uniform on stroke thickness
 
   - Trackball
     - [x] Move Reset below Pogo to make space for SPI interface
-    - [x] Add SPI interface (in place of Reset) (4 pins x 2)
-    - [ ] Check 3D works (unibody case)
+    - [x] Add SPI interface (in place of Reset) (8 pins header column)
+    - [x] Add SPI interface (8 pins JST SH vertical)
+    - [x] Check 3D works (unibody case)
+    - [x] Update footprint for sensor
+    - Limitations of existing boards
+      - Only works with the right side with vertical header
+      - Can works on all side if using right angle header (add header width to trackball height ...)
 
   - Documentation
-    - [ ] Update reset switch
-    - [ ] Add missing
-      - [ ] Pogo
-      - [ ] Header pins PCB
-      - [ ] Header pins Trackball
+    - [x] Update reset switch
+    - [x] Add missing
+      - [x] Resistors
+      - [x] Capacitors
+      - [x] Pogo
+      - [x] Header pins PCB
+      - [x] Header pins Trackball
     - [ ] Add Build logs
     - [ ] Add Wiki
 
@@ -356,25 +379,29 @@ Home to HomeThumbs    | [30.11, 52.55]  | [32.246, 54.7]   |  [✅, ✅] |
     - [ ] Handle difference between RP2040 and Atemega32U4 on QMK side
       - Trackball (SPI) only compatible with RP2040
 
-  - Outputs (v0.65)
-    - [x] Update PCB / Schema date
-    - [x] Regenerate DXF (mm)
-    - [x] Regenerate gerbers (inch)
-    - [x] Regenerate previews
-    - [ ] Push gerbers
+  - Outputs (v0.66)
+    - [ ] Update PCB / Schema date
+    - [ ] Regenerate DXF (mm)
+    - [ ] Regenerate gerbers (inch)
+    - [ ] Regenerate previews
 
   - Try
     - [x] [Choc keycaps tilter](https://www.thingiverse.com/thing:5379000)
     - [x] Create [Choc keycaps tilter](https://www.thingiverse.com/thing:5379000) variant with 90° angle (to test on outer pinky)
     - [x] [chicago stenographer](https://www.asymplex.xyz/product/cs-chicago-stenographer-profile) keycaps
-    - [ ] **QWIIC** as a hotswapable I2C with integrated pull-up resistors
+    - [x] **QWIIC** as a hotswapable I2C with integrated pull-up resistors
     - [ ] Female Threaded 1/4" Standoffs in Unibody case instead of Splikb tenting puck (smaller hole ...)
     - [ ] [Choc to MX converter](https://www.thingiverse.com/thing:4504072) with custom artisan
+
+    - [ ] Push gerbers for v0.6 (the ones sent to production)
 
 
 ## Kicad errors
 
   - Courtyard FPC connector and jumpers overlap
+    - It's ok because both are not used at the same time
+
+  - Courtyard JST PH (bluetooth) and JST SH (trackball) overlap
     - It's ok because both are not used at the same time
 
   - FPC pins are not connected
