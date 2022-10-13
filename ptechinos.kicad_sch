@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-10-04")
+    (date "2022-10-15")
     (rev "0.6")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
@@ -2381,7 +2381,7 @@
     (effects (font (size 2 2)) (justify left bottom))
     (uuid 7a58f5f7-22e4-4b5a-9652-e319e75998ab)
   )
-  (text "SPI on KB2040 :\n  - Conflict with both thumbs encoder and I2C first line\n  - Can still used the second I2C line (Qwiic)"
+  (text "SPI on KB2040 :\n  - Conflict with second I2C line and thumb encoder\n  - Can still used the second I2C line (Qwiic)\n  - Can still used the second encoder (outer top)"
     (at 17.78 40.64 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7b9734a4-556a-481b-914d-007df0a3e467)
@@ -2391,7 +2391,7 @@
     (effects (font (size 1 1)) (justify left bottom))
     (uuid 7f3c3e6f-7a04-4bda-a7b4-339649a604a8)
   )
-  (text "USART Half-duplex :\n  - faster than bitbang driver (default)\n  - ARM only \n  - Required a pin supporting TX (for USART)\n  - RP2040 specific\n    - Internal pull-up drive the line high\n    - Using PIO driver any pin can be used as TX or RX pins\n\nNo need to move serial pin\nhttps://github.com/qmk/qmk_firmware/blob/master/docs/serial_driver.md"
+  (text "USART Half-duplex :\n  - faster than bitbang driver (default)\n  - ARM only \n  - Required a pin supporting TX (for USART)\n  - RP2040 specific\n    - Internal pull-up drive the line high (no need to add external pull-up)\n    - Using PIO driver any pin can be used as TX or RX pins\n\nNo need to move serial pin\nhttps://github.com/qmk/qmk_firmware/blob/master/docs/serial_driver.md"
     (at 16.51 72.39 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8e632095-76d7-48b7-9569-2abfc529f602)
@@ -3959,7 +3959,7 @@
     (uuid b8fc8948-acfa-45b9-a49d-65c8d80e319e)
     (property "Reference" "SW1" (id 0) (at 67.31 185.42 0))
     (property "Value" "SW_Power" (id 1) (at 67.31 175.26 0))
-    (property "Footprint" "ptechinos:SW_SPDT_JS202011AQN" (id 2) (at 67.31 180.34 0)
+    (property "Footprint" "ptechinos:SW_MSK12C02_ShouHan_reversible" (id 2) (at 67.31 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 67.31 180.34 0)
@@ -4780,7 +4780,7 @@
       (reference "S20") (unit 1) (value "RotaryEncoder_Switch") (footprint "ptechinos:pg1350-EVQWGD001_R")
     )
     (path "/b8fc8948-acfa-45b9-a49d-65c8d80e319e"
-      (reference "SW1") (unit 1) (value "SW_Power") (footprint "ptechinos:SW_SPDT_JS202011AQN")
+      (reference "SW1") (unit 1) (value "SW_Power") (footprint "ptechinos:SW_MSK12C02_ShouHan_reversible")
     )
     (path "/e94038c9-6579-43c0-b1c1-db1000e9a730"
       (reference "SW2") (unit 1) (value "Reset") (footprint "ptechinos:SW_SKRKAEE020_ALPS")
