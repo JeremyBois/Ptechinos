@@ -28,7 +28,9 @@
   - Trackball
    - [Oddball](https://github.com/atulloh/oddball)
    - [Ximi](https://www.reddit.com/r/ErgoMechKeyboards/comments/xhvq3v/ximi_is_near/)
-
+  - Tenting
+    - [Magnetic legs / case](https://www.reddit.com/r/ErgoMechKeyboards/comments/y1a0iy/new_travel_keyboard_this_time_its_splayed/)
+    - [Some examples](https://rmwphd.github.io/tenting.html)
 
 ## RP2040
 
@@ -80,6 +82,11 @@
     - [Oddball project](https://github.com/atulloh/oddball)
       - PMW3360 cover
       - Bearing mount
+    - [Orb](https://github.com/dpapavas/orb-trackball)
+      - [reddit](https://www.reddit.com/r/ErgoMechKeyboards/comments/xziw1u/the_orb_a_parametric_trackball_with_btu_mounted/)
+      - PMW3389 cover
+      - Bearing mount
+      - Compact with buttons
 
 ### GlidePoint Cirque Trackpad TM035035
   - QMK support
@@ -135,6 +142,7 @@
   - JST
     - [2-10 | 1P (SH)| Horizontal](https://fr.aliexpress.com/item/4000898605030.html)
     - [2-12 | 1P (SH)| Vertical](https://fr.aliexpress.com/item/4001122482484.html)
+
 ### Others
 
    - Socket strips
