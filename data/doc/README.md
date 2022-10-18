@@ -70,8 +70,8 @@
     - [PMW3389DM-T3QU + Lens](https://aliexpress.com/item/32891335998.html)
 
   - Bearing ball ([Zr02 seems better than Si3n4](https://prokcssmedia.blob.core.windows.net/sys-master-images/hb2/haf/9263251816478/ceramic-bearing-selection-guide.pdf), [G5 > G10]())
-    - [ZrO2  | G5 | 2.5mm](https://fr.aliexpress.com/item/4000852337622.html)
-    - [Si3N4 | G5 | >=1.0mm](https://fr.aliexpress.com/item/1005004242351539.html)
+    - [ZrO2  | G5 | 2.5mm](https://aliexpress.com/item/4000852337622.html)
+    - [Si3N4 | G5 | >=1.0mm](https://aliexpress.com/item/1005004242351539.html)
 
   - Ball
     - [25mm | billiard](https://www.amazon.com/CAOREN-16pcs-Billiard-Children-Accessories/dp/B0836WQQF5)
@@ -127,6 +127,9 @@
   - Reset
     - [SKRKAEE020_ALPS | x30](https://aliexpress.com/item/1005004196388006.html)
     - [4x3x2           | x100](https://aliexpress.com/item/1005001298009129.html)
+  - On/Off
+    - [100 | MSK12C02 Power switch](https://aliexpress.com/item/4001295557976.html)
+
 
 ### Connectors
 
@@ -140,8 +143,9 @@
     - [2-10 | 2.54P  | Right angle](https://aliexpress.com/item/1005003579709688.html)
     - [4    | 2.54P  | SMD        ](https://aliexpress.com/item/1005001805224245.html)
   - JST
-    - [2-10 | 1P (SH)| Horizontal](https://fr.aliexpress.com/item/4000898605030.html)
-    - [2-12 | 1P (SH)| Vertical](https://fr.aliexpress.com/item/4001122482484.html)
+    - [2-10 | 1P (SH) | Horizontal](https://aliexpress.com/item/4000898605030.html)
+    - [2-12 | 1P (SH) | Vertical](https://aliexpress.com/item/4001122482484.html)
+    - [2-10 | 2P (PH) | Horizontal](https://aliexpress.com/item/4000091077742.html)
 
 ### Others
 
