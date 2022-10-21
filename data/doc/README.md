@@ -3,22 +3,21 @@
 ## Whislist
 
   - Trackball
-    - [ ] Ball 25mm
-    - [ ] Bearing balls 2.5mm zirconium oxide (G5)
-    - [ ] Headers male for SPI + cables
-    - [ ] Cable female headers to connect to male exposed on PCB
+    - [x] Ball 25mm
+    - [x] Bearing balls 2.5mm zirconium oxide (G5)
+    - [x] JST SH connector
     - [ ] Breakout board
       - [3.3V or 5V](https://github.com/Ariamelon/Ogen)
       - Assembly JLCPCB
       - Sensor on aliexpress
 
   - Others
-    - [ ] Reset
-    - [ ] Capacitor
+    - [x] Reset
+    - [x] Capacitor
 
   - Pogo
-    - 4 pins magnetic
-    - 8 pins
+    - [x] 4 pins magnetic
+    - [x] 8 pins
 
 
 ## Case
@@ -69,7 +68,7 @@
     - [PMW3360DM-T2QU + Lens](https://aliexpress.com/item/33056166849.html)
     - [PMW3389DM-T3QU + Lens](https://aliexpress.com/item/32891335998.html)
 
-  - Bearing ball ([Zr02 seems better than Si3n4](https://prokcssmedia.blob.core.windows.net/sys-master-images/hb2/haf/9263251816478/ceramic-bearing-selection-guide.pdf), [G5 > G10]())
+  - Bearing ball ([Zr02 seems better than Si3n4](https://prokcssmedia.blob.core.windows.net/sys-master-images/hb2/haf/9263251816478/ceramic-bearing-selection-guide.pdf), G5 > G10)
     - [ZrO2  | G5 | 2.5mm](https://aliexpress.com/item/4000852337622.html)
     - [Si3N4 | G5 | >=1.0mm](https://aliexpress.com/item/1005004242351539.html)
 
@@ -122,8 +121,8 @@
       - ADC does not yet works on QMK with RP2040
     - [I2C wiring](https://docs.qmk.fm/#/feature_split_keyboard)
 
-### Switches
 
+### Switches
   - Reset
     - [SKRKAEE020_ALPS | x30](https://aliexpress.com/item/1005004196388006.html)
     - [4x3x2           | x100](https://aliexpress.com/item/1005001298009129.html)
@@ -132,7 +131,6 @@
 
 
 ### Connectors
-
   - Laptop battery connector
     - [3-12 | 2.54P](https://aliexpress.com/item/1005003903158555.html)
   - Magnetic Pogo
@@ -142,20 +140,25 @@
   - Pogo
     - [2-10 | 2.54P  | Right angle](https://aliexpress.com/item/1005003579709688.html)
     - [4    | 2.54P  | SMD        ](https://aliexpress.com/item/1005001805224245.html)
-  - JST
-    - [2-10 | 1P (SH) | Horizontal](https://aliexpress.com/item/4000898605030.html)
-    - [2-12 | 1P (SH) | Vertical](https://aliexpress.com/item/4001122482484.html)
-    - [2-10 | 2P (PH) | Horizontal](https://aliexpress.com/item/4000091077742.html)
+  - JST SH
+    - [2-12 | M/F | V/H](https://aliexpress.com/item/4001122482484.html)
+    - [2-10 | M/F | V/H](https://aliexpress.com/item/1005003131441676.html)
+    - [2-10 | Mx2 |     | Wire](https://aliexpress.com/item/1005001295609035.html)
+    - [2-10 | M/F | V/H | Wire](https://aliexpress.com/item/32833673778.html)
+    - [2-10 | M/F | H   | Wire](https://aliexpress.com/item/4000898605030.html)
+    - [2-10 | F   | V  ](https://aliexpress.com/item/1005001783096367.html)
+  - JST PH
+    - [2-10 | M/F | H   | Wire](https://aliexpress.com/item/4000091077742.html)
 
 ### Others
-
-   - Socket strips
-     - [Low Profile Socket Strip (squared pins)](https://www.mouser.fr/ProductDetail/Samtec/CES-104-01-L-S?qs=PB6%2FjmICvI1cSb0fQjZcig%3D%3D)
-   - Tact switches for mouse buttons (requires a new row on pin 18)
-     -  [Tact switches](https://en.jian-fu.com/product/48.html)
-   - Male header right angle (Trackball pins)
-     - [Sparkfun](https://www.sparkfun.com/products/553)
-
+  - Socket strips
+    - [Low Profile Socket Strip (squared pins)](https://www.mouser.fr/ProductDetail/Samtec/CES-104-01-L-S?qs=PB6%2FjmICvI1cSb0fQjZcig%3D%3D)
+  - Tact switches for mouse buttons (requires a new row on pin 18)
+    -  [Tact switches](https://en.jian-fu.com/product/48.html)
+  - Male header right angle (Trackball pins)
+    - [Sparkfun](https://www.sparkfun.com/products/553)
+  - Capacitors
+    - [0805 | 0.5pF - 47uF](https://aliexpress.com/item/32964553793.html)
 
 ## Tools
   - [Ergogen (online)](https://ergogen.cache.works/)

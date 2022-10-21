@@ -76,6 +76,7 @@ All production files are in `data/production` :
     - Add support for I2C components:
       - Cirque trackpad with FFC/FPC connector
       - OLED with socketing / QWIIC (Require KP2040)
+      - Joystick with QWIIC (Require KP2040)
     - Update guard holes position and add another at the bottom (3 in total)
     - MCU and TRRS are now aligned to PCB top edge and each protrude slightly
     - Add support for [Asymplex ChicagoSteno T15 Thumb](https://www.asymplex.xyz/product/cs-ergo-sets)
@@ -88,8 +89,8 @@ All production files are in `data/production` :
       - Both encoders can be used at the same time
     - Make more space for encoder / optional key for MX keycaps (using [this adapter](https://www.thingiverse.com/thing:4504072))
     - Add Pogo connectors support
-      - Safer alternative to TRRS (no shorts, disconnect gently)
-      - Allow to switch between split and unsplit
+      - 4 pins version allows for safer alternative to TRRS (no shorts, disconnect gently)
+      - 8 pins version allows to switch between split and unsplit
 
   - **Sandwich case**
     - Bottom plate
