@@ -27,9 +27,12 @@
   - Trackball
    - [Oddball](https://github.com/atulloh/oddball)
    - [Ximi](https://www.reddit.com/r/ErgoMechKeyboards/comments/xhvq3v/ximi_is_near/)
+   - [Orb](https://github.com/dpapavas/orb-trackball)
+   - [Norne v3](https://www.reddit.com/r/ErgoMechKeyboards/comments/y88hbm/my_attempt_to_make_keyboarding_just_a_bit_weirder/)
   - Tenting
     - [Magnetic legs / case](https://www.reddit.com/r/ErgoMechKeyboards/comments/y1a0iy/new_travel_keyboard_this_time_its_splayed/)
     - [Some examples](https://rmwphd.github.io/tenting.html)
+
 
 ## RP2040
 
