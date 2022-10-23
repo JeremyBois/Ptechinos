@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-10-21")
+    (date "2022-10-23")
     (rev "0.6")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
@@ -4379,7 +4379,7 @@
     (property "Value" "Pogo" (id 1) (at 212.09 118.11 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (id 2) (at 218.44 124.46 0)
+    (property "Footprint" "ptechinos:PinHeader_1x04_P2.54mm_Vertical" (id 2) (at 218.44 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 218.44 124.46 0)
@@ -4701,7 +4701,7 @@
       (reference "J6") (unit 1) (value "OLED Header (I2C)") (footprint "ptechinos:OLED")
     )
     (path "/e2fea733-a4a4-4fad-a2fe-b335d49ded07"
-      (reference "J7") (unit 1) (value "Pogo") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+      (reference "J7") (unit 1) (value "Pogo") (footprint "ptechinos:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/5187f2ae-558c-4228-a74a-6bc711a2463a"
       (reference "J8") (unit 1) (value "Trackball Header (Serial)") (footprint "ptechinos:PMW3360")
