@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-10-23")
+    (date "2022-11-01")
     (rev "0.6")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
@@ -3094,7 +3094,7 @@
     (property "Reference" "J5" (id 0) (at 96.52 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Trackpad I2C" (id 1) (at 87.63 125.73 0)
+    (property "Value" "Trackpad" (id 1) (at 87.63 125.73 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "ptechinos:GCT_FFC2B35-12-G_R" (id 2) (at 100.33 142.24 0)
@@ -3482,7 +3482,7 @@
     (in_bom yes) (on_board yes)
     (uuid 5187f2ae-558c-4228-a74a-6bc711a2463a)
     (property "Reference" "J8" (id 0) (at 83.82 110.49 0))
-    (property "Value" "Trackball Header (Serial)" (id 1) (at 76.2 86.36 0))
+    (property "Value" "Trackball" (id 1) (at 80.01 86.36 0))
     (property "Footprint" "ptechinos:PMW3360" (id 2) (at 83.82 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4037,7 +4037,7 @@
     (in_bom no) (on_board yes)
     (uuid bcc3f068-dd7c-4997-80d9-41bb8616ad34)
     (property "Reference" "J6" (id 0) (at 35.56 156.21 90))
-    (property "Value" "OLED Header (I2C)" (id 1) (at 59.69 156.21 90))
+    (property "Value" "OLED" (id 1) (at 44.45 160.02 90))
     (property "Footprint" "ptechinos:OLED" (id 2) (at 45.72 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4474,7 +4474,7 @@
     (in_bom yes) (on_board yes)
     (uuid f6399dd9-c1f4-4a0a-8f1e-6495630fc0ad)
     (property "Reference" "J3" (id 0) (at 101.6 110.49 0))
-    (property "Value" "Trackball JST (Serial)" (id 1) (at 115.57 86.36 0))
+    (property "Value" "Trackball JST" (id 1) (at 115.57 86.36 0))
     (property "Footprint" "Connector_JST:JST_SH_BM08B-SRSS-TB_1x08-1MP_P1.00mm_Vertical" (id 2) (at 101.6 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4689,22 +4689,22 @@
       (reference "J2") (unit 1) (value "Battery") (footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal")
     )
     (path "/f6399dd9-c1f4-4a0a-8f1e-6495630fc0ad"
-      (reference "J3") (unit 1) (value "Trackball JST (Serial)") (footprint "Connector_JST:JST_SH_BM08B-SRSS-TB_1x08-1MP_P1.00mm_Vertical")
+      (reference "J3") (unit 1) (value "Trackball JST") (footprint "Connector_JST:JST_SH_BM08B-SRSS-TB_1x08-1MP_P1.00mm_Vertical")
     )
     (path "/89410a4f-cc6a-4037-96a0-5a28865a1455"
       (reference "J4") (unit 1) (value "TRRS") (footprint "ptechinos:MJ-4PP-9")
     )
     (path "/17efe087-3c06-4228-b0b9-f81dc95b2c2f"
-      (reference "J5") (unit 1) (value "Trackpad I2C") (footprint "ptechinos:GCT_FFC2B35-12-G_R")
+      (reference "J5") (unit 1) (value "Trackpad") (footprint "ptechinos:GCT_FFC2B35-12-G_R")
     )
     (path "/bcc3f068-dd7c-4997-80d9-41bb8616ad34"
-      (reference "J6") (unit 1) (value "OLED Header (I2C)") (footprint "ptechinos:OLED")
+      (reference "J6") (unit 1) (value "OLED") (footprint "ptechinos:OLED")
     )
     (path "/e2fea733-a4a4-4fad-a2fe-b335d49ded07"
       (reference "J7") (unit 1) (value "Pogo") (footprint "ptechinos:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/5187f2ae-558c-4228-a74a-6bc711a2463a"
-      (reference "J8") (unit 1) (value "Trackball Header (Serial)") (footprint "ptechinos:PMW3360")
+      (reference "J8") (unit 1) (value "Trackball") (footprint "ptechinos:PMW3360")
     )
     (path "/36785586-f5d0-48d2-b235-eb5df464c3a2"
       (reference "JP1") (unit 1) (value "SDA Jumper") (footprint "ptechinos:Jumper_open")
