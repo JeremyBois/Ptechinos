@@ -14,6 +14,7 @@
   - Others
     - [x] Reset
     - [x] Capacitor
+    - Rounded socket strip female (~4.8)
 
   - Pogo
     - [x] 4 pins magnetic
@@ -131,7 +132,8 @@
     - [4x3x2           | x100](https://aliexpress.com/item/1005001298009129.html)
   - On/Off
     - [100 | MSK12C02 Power switch](https://aliexpress.com/item/4001295557976.html)
-
+  - Tactile for mouse buttons
+    -  [Tact switches](https://en.jian-fu.com/product/48.html)
 
 ### Connectors
   - Laptop battery connector
@@ -155,9 +157,8 @@
 
 ### Others
   - Socket strips
-    - [Low Profile Socket Strip (squared pins)](https://www.mouser.fr/ProductDetail/Samtec/CES-104-01-L-S?qs=PB6%2FjmICvI1cSb0fQjZcig%3D%3D)
-  - Tact switches for mouse buttons (requires a new row on pin 18)
-    -  [Tact switches](https://en.jian-fu.com/product/48.html)
+    - [Squared | female | 4.57 or 5.08](https://www.mouser.fr/ProductDetail/Samtec/CES-104-01-L-S?qs=PB6%2FjmICvI1cSb0fQjZcig%3D%3D)
+    - [Rounded | female | 4.7](https://www.mouser.fr/ProductDetail/Samtec/CES-104-01-L-S?qs=PB6%2FjmICvI1cSb0fQjZcig%3D%3D)
   - Male header right angle (Trackball pins)
     - [Sparkfun](https://www.sparkfun.com/products/553)
   - Capacitors
