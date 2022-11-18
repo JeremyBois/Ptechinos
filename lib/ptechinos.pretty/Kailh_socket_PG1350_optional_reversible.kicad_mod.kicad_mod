@@ -5,7 +5,7 @@
   (tags "kailh,choc")
   (property "Sheetfile" "Pteron36.kicad_sch")
   (property "Sheetname" "")
-  (attr through_hole)
+  (attr through_hole exclude_from_pos_files)
   (fp_text reference "S17" (at 0.25 -2.54 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 39dfe24b-4a86-4229-8b5c-2960b9bae886)
@@ -140,4 +140,14 @@
   (pad "2" thru_hole circle (at -5 3.8) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask) (tstamp 421df253-94bd-4abf-8c3a-32c9d4298196))
   (pad "2" smd rect (at -8.275 -3.75) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 52ee9129-d959-4015-91e4-ab0f5193e9ce))
   (pad "2" thru_hole circle (at 5 3.8) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask) (tstamp ff174e3b-611c-4745-9649-53290b560dc9))
+  (model "${KIPRJMOD}/data/models/Kailh_Choc_V1.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 0.4 0.4 0.4))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/data/models/Kailh_choc_Hotswap.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 0.4 0.4 0.4))
+    (rotate (xyz 0 0 0))
+  )
 )

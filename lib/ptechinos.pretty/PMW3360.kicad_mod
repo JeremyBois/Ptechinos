@@ -114,4 +114,9 @@
   (pad "6" thru_hole oval (at 3.81 9.45 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 91590985-daba-4120-a319-cc66f4f8cf3e))
   (pad "7" thru_hole oval (at 6.35 9.45 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp f449ef33-7a36-4aa0-8674-4aa64d00c2cd))
   (pad "8" thru_hole oval (at 8.89 9.45 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 0b584a27-ca5b-4555-b2e3-7db3613348a5))
+  (model "${KIPRJMOD}/data/models/Pogo_8pins_RightAngle.wrl"
+    (offset (xyz -8.8 -9.5 -4))
+    (scale (xyz 0.39 0.39 0.39))
+    (rotate (xyz -90 0 -180))
+  )
 )

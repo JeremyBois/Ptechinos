@@ -341,4 +341,14 @@
   (pad "23" thru_hole circle (at 6.35 -10.668) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask "F.SilkS") (tstamp fecc19c8-b5b5-4b31-b3e5-a84d2195294a))
   (pad "24" thru_hole circle (at -7.5636 -14.478) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask "F.SilkS") (tstamp 54fd21b4-99cd-4a19-96e6-03cfba903d58))
   (pad "24" thru_hole circle (at 6.35 -13.208) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask "F.SilkS") (tstamp fd7a979f-9d59-4a7a-8ba0-54ea93de8ad4))
+  (model "${KIPRJMOD}/data/models/KB2040.wrl"
+    (offset (xyz -9 18.5 0))
+    (scale (xyz 0.4 0.4 0.4))
+    (rotate (xyz 0 0 90))
+  )
+  (model "${KIPRJMOD}/data/models/KB2040.wrl"
+    (offset (xyz 8 17.5 -1.5))
+    (scale (xyz 0.4 0.4 0.4))
+    (rotate (xyz 180 0 90))
+  )
 )

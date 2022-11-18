@@ -3,7 +3,7 @@
   (tedit 62E134A2)
   (descr "Reversible FPC connector with 12 pins from GCT")
   (tags "FPC Connector GCT FFC2B35")
-  (attr through_hole)
+  (attr smd)
   (fp_text reference "REF**" (at 0.34 -1.43) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 9d40df83-65b0-482b-85a7-251f6a1f4bc1)
@@ -86,4 +86,14 @@
   (pad "S1" smd rect (at -4.65 0) (size 1.8 2.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8cf8ac98-43c6-4cff-abf1-9bd3cf363fe4))
   (pad "S2" smd rect (at 4.65 0) (size 1.8 2.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 532b06ab-827e-43b9-9bee-0f986bdf37a7))
   (pad "S2" smd rect (at -4.66 0) (size 1.8 2.2) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 6d364ee0-5d5d-4cec-9a66-7cabb4fa1f2b))
+  (model "${KIPRJMOD}/data/models/FPC_connector.step"
+    (offset (xyz 19 -9 -218))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 90 180))
+  )
+  (model "${KIPRJMOD}/data/models/FPC_connector.step"
+    (offset (xyz -19 -9 216.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -90 -180))
+  )
 )
