@@ -142,11 +142,11 @@ outlines:
           - ref: matrix_ring_top
             shift: [0.52kx, 0.74ky]
           - ref: matrix_inner_bottom
-            shift: [39.8, -0.51ky]
+            shift: [39.622, -0.51ky]
           - ref: matrix_inner_bottom
-            shift: [39.75, -0.52ky]
+            shift: [39.6, -0.52ky]
           - ref: matrix_inner_bottom
-            shift: [38.6, -0.9ky]
+            shift: [38.635, -0.9ky]
     _controller_area:
       - type: polygon
         points:
@@ -155,7 +155,7 @@ outlines:
           - ref: matrix_inner_top
             shift: [48, 0.826ky]
           - ref: matrix_inner_bottom
-            shift: [39.8, -0.51ky]
+            shift: [39.622, -0.51ky]
           - ref: matrix_inner_bottom
             shift: [0.55kx, 0.05ky]
     _bottom_encoder_cutout:
