@@ -196,12 +196,12 @@
     (primitives
       (gr_line (start 0 0) (end 10 0) (width 0.25))
     ) (tstamp dcc92dd7-3fcc-459e-b0be-3052e995896e))
-  (model "${KIPRJMOD}/data/models/Panasonic_EVQWGD001.step"
+  (model "${KIPRJMOD}/data/models/Encoder_Panasonic_EVQWGD001.step"
     (offset (xyz 10.5 7 2))
     (scale (xyz 1 1 1))
     (rotate (xyz -180 0 90))
   )
-  (model "${KIPRJMOD}/data/models/Panasonic_EVQWGD001.step"
+  (model "${KIPRJMOD}/data/models/Encoder_Panasonic_EVQWGD001.step"
     (offset (xyz 10.5 -7 -4))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

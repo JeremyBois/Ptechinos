@@ -1,8 +1,8 @@
-(footprint "RP2040" (version 20211014) (generator pcbnew)
+(footprint "KB2040" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 5B7FE439)
-  (descr "RP2040 reversible")
-  (tags "RP2040")
+  (descr "KB2040 reversible")
+  (tags "KB2040")
   (property "Sheetfile" "ptechinos.kicad_sch")
   (property "Sheetname" "")
   (attr through_hole exclude_from_pos_files)
@@ -10,7 +10,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp b33fc397-908c-4efc-bf78-ea39d2d1967c)
   )
-  (fp_text value "RP2040" (at -0.45 -17) (layer "F.Fab") hide
+  (fp_text value "KB2040" (at -0.45 -17) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 42cef0c8-e26a-4ccd-bc67-7c6489711d28)
   )
@@ -346,14 +346,14 @@
   (pad "23" thru_hole circle (at -7.5636 -11.938) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask "F.SilkS") (tstamp afa45821-d8a9-4ea1-87ec-4822743ca50a))
   (pad "24" thru_hole circle (at -7.5636 -14.478) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask "F.SilkS") (tstamp d200b5ee-3bba-4e87-b0aa-12ecd25098e0))
   (pad "24" thru_hole circle (at 6.35 -13.208) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask "F.SilkS") (tstamp db1463bb-b9f0-4a28-9d73-a2fb155345bc))
-  (model "${KIPRJMOD}/data/models/KB2040.wrl"
-    (offset (xyz 8 17.5 -1.5))
-    (scale (xyz 0.4 0.4 0.4))
-    (rotate (xyz 0 180 -90))
+  (model "${KIPRJMOD}/data/models/Adafruit_KB2040.wrl"
+    (offset (xyz -10.25 16 -6.5))
+    (scale (xyz 0.38 0.38 0.38))
+    (rotate (xyz -180 180 -90))
   )
-  (model "${KIPRJMOD}/data/models/KB2040.wrl"
-    (offset (xyz -9 18.5 0))
-    (scale (xyz 0.4 0.4 0.4))
-    (rotate (xyz 0 0 90))
+  (model "${KIPRJMOD}/data/models/Adafruit_KB2040.wrl"
+    (offset (xyz 8 16.5 5))
+    (scale (xyz 0.38 0.38 0.38))
+    (rotate (xyz -180 0 90))
   )
 )

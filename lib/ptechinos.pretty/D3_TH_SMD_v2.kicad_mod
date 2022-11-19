@@ -4,7 +4,7 @@
   (descr "Resitance 3 pas")
   (tags "R")
   (autoplace_cost180 10)
-  (attr through_hole)
+  (attr smd)
   (fp_text reference "D33" (at 0.55 0 -180) (layer "F.Fab") hide
     (effects (font (size 0.5 0.5) (thickness 0.125)))
     (tstamp a2f8f581-cb98-4fca-ba69-e4094a401eba)
@@ -27,12 +27,12 @@
   (pad "2" smd rect (at 1.775 0 180) (size 1.4 1.3) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 6bc99325-327b-44ed-973f-337f7819e8c2))
   (pad "2" thru_hole oval (at 3 0) (size 1.778 1.3) (drill 0.8128) (layers *.Cu *.Mask) (tstamp e5efcd18-a807-4c36-a86b-cd93e0a18a09))
   (pad "2" smd rect (at 1.775 0 180) (size 1.4 1.3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ed87d938-eff5-4fce-98f7-e0e30e1a1252))
-  (model "${KIPRJMOD}/data/models/Diode_SOD123.step"
-    (opacity 0.8200)    (offset (xyz 0 0 0))
+  (model "${KIPRJMOD}/data/models/Diode_1N4148W_SOD123.step"
+    (opacity 0.9700)    (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KIPRJMOD}/data/models/Diode_SOD123.step"
+  (model "${KIPRJMOD}/data/models/Diode_1N4148W_SOD123.step"
     (offset (xyz 0 0 -1.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 180 0 0))
