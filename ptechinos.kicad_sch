@@ -6,7 +6,7 @@
 
   (title_block
     (title "Ptechinos")
-    (date "2022-11-18")
+    (date "2022-11-19")
     (rev "0.6")
     (comment 1 "A crossover between Pteron36 and Balbuzard.")
   )
@@ -4157,10 +4157,10 @@
     (property "Reference" "U1" (id 0) (at 120.65 31.75 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "ProMicro" (id 1) (at 120.65 72.39 0)
+    (property "Value" "KB2040" (id 1) (at 120.65 72.39 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "ptechinos:RP2040" (id 2) (at 123.19 80.01 0)
+    (property "Footprint" "ptechinos:KB2040" (id 2) (at 123.19 80.01 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 123.19 80.01 0)
@@ -4821,7 +4821,7 @@
       (reference "SW3") (unit 1) (value "Reset") (footprint "ptechinos:SW_SKRKAEE020_ALPS")
     )
     (path "/d4bd6363-447e-4df0-8f7c-7fdbb7d5fd88"
-      (reference "U1") (unit 1) (value "ProMicro") (footprint "ptechinos:RP2040")
+      (reference "U1") (unit 1) (value "KB2040") (footprint "ptechinos:KB2040")
     )
   )
 )
