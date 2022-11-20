@@ -311,7 +311,7 @@ Home to HomeThumbs    | [30.456, 52.97] | [32.246, 54.7]   |  [✅, ✅] |
     - More SRAM to enable more stuff (RGB leds, pointing devices, OLED, ...)
     - Better pointing device experience ([smoother trackpad experience](https://www.reddit.com/r/ErgoMechKeyboards/comments/w6r7on/comment/ihfko44/?utm_source=share&utm_medium=web2x&context=3))
     - **QWIIC** connector for easy to plug I2C devices
-    - [ ] Find headers perfect height
+    - [x] Find headers perfect height
 
 
   - [x] GlidePoint Cirque circular trackpad (I2C)
@@ -336,14 +336,14 @@ Home to HomeThumbs    | [30.456, 52.97] | [32.246, 54.7]   |  [✅, ✅] |
   - Bluetooth
     - [x] Remove `VCC_ON` (was used to isolated `VCC` line but most MCU have this as a software feature)
     - [x] Remove redundant B+ and B- pins (ones on the connector foo)
-    - [ ] Make sure there is enough place for battery JST
+    - [x] Make sure there is enough place for battery JST
 
   - Pogo
     - [x] Add Pogo magnetic connectors (4 pins) as an alternative for TRRS
       - Can be used to merge both half to create an unsplit keyboard
     - [x] Find Pogo connector (4 pins)
     - [x] Find Pogo connector (8 pins)
-    - [ ] Check 3D works (unibody case)
+    - [x] Check 3D works (unibody case)
       - Works (tested with 4 pins version)
 
   - PCB indications / information
@@ -380,11 +380,12 @@ Home to HomeThumbs    | [30.456, 52.97] | [32.246, 54.7]   |  [✅, ✅] |
     - [ ] Handle difference between RP2040 and Atemega32U4 on QMK side
       - Trackball (SPI) only compatible with RP2040
 
-  - Outputs (v0.66)
-    - [ ] Update PCB / Schema date
-    - [ ] Regenerate DXF (mm)
-    - [ ] Regenerate gerbers (inch)
-    - [ ] Regenerate previews
+  - Outputs (v0.68)
+    - [x] Update PCB / Schema date
+    - [x] Regenerate DXF (mm)
+    - [x] Regenerate gerbers (inch)
+    - [x] Regenerate previews
+    - [x] Push gerbers for v0.6 (the ones sent to production)
 
   - Try
     - [x] [Choc keycaps tilter](https://www.thingiverse.com/thing:5379000)
@@ -393,8 +394,6 @@ Home to HomeThumbs    | [30.456, 52.97] | [32.246, 54.7]   |  [✅, ✅] |
     - [x] **QWIIC** as a hotswapable I2C with integrated pull-up resistors
     - [ ] Female Threaded 1/4" Standoffs in Unibody case instead of Splikb tenting puck (smaller hole ...)
     - [ ] [Choc to MX converter](https://www.thingiverse.com/thing:4504072) with custom artisan
-
-    - [ ] Push gerbers for v0.6 (the ones sent to production)
 
 
 ## Kicad errors
